@@ -18,8 +18,9 @@ A(1/g + 1/r) = 90 -----[3]
 
 Adding all the 3 we get A[1/c + 1/g + 1/r] = 195/2 = 97.5 
 
-However we know this answer is wrong as common sense tells us that all three animals eating together must finish off the grass in the field
-sooner than 45 days which is the number of days the cow and goat take (without the rabbit) in order to finish the grass in the field.
+However we know this answer is wrong as common sense tells us that all three animals eating together must finish off the grass 
+in the field sooner than 45 days which is the number of days the cow and goat take (without the rabbit) in order to finish the
+grass in the field.
 
 We are however yet to take advantage of the facts in the problem:
 1] The grass in the field grows at a uniform field
@@ -35,12 +36,13 @@ Also,
 
 90 days = 1 goat + 1 rabbit
 
-We can temporarily ignore the rabbit in the above set of equations and confirm that 1 goat will take 90 days to finish the field ( while the rabbit grazes
-on the grass growing at a uniform rate. Certainly there is some contribution by the rabbit but its capacity is limited.
+We can temporarily ignore the rabbit in the above set of equations and confirm that 1 goat will take 90 days to finish the 
+field (while the rabbit grazes on the grass growing at a uniform rate. 
+Certainly there is some contribution by the rabbit but its capacity is limited.
 
-Let G be the original amount of grass which the goat takes 90 days to eat.From this logic, the cow will take 60 days to complete the 
-field by itself.
+Let G be the original amount of grass which the goat takes 90 days to eat.
+From this logic, the cow will take 60 days to complete the field by itself.
 
 Hence it can be concluded that 1 rabbit can eat the daily grass growth, cow eats 1/60 of G and the goat eats 1/90 of G.
-The cow and the goat together eat (1/60 + 1/90) = 1/36 of G while the rabbit consumes the daily grass growth. So all three animals
-eating the grass together will take 36 days to complete the field.
+The cow and the goat together eat (1/60 + 1/90) = 1/36 of G while the rabbit consumes the daily grass growth. 
+So all three animals eating the grass together will take 36 days to complete the field.
