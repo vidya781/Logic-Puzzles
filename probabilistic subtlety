@@ -1,0 +1,22 @@
+This puzzle has a probabilistic shade to it. Which one is more likely?  Exactly 3 heads in 4 tosses or exactly 5 heads in 8 
+tosses?
+
+Solution:
+
+We note that the total number of different combinations that can result in 4 tosses is 2 ^ 4 = 16 [In case this is not apparent
+please see that each toss can result in heads or tails both of which are equally likely.]
+
+Exactly 3 heads can occur in 4  ways = 4 different ways.
+                              C
+                               3
+So probability P(Case 1) = 4 / 16 = 1/4
+
+
+Following a similar approach we have P(Case 2) = 8              = 56 / 256 = 7 / 32
+                                                  C
+                                                    5 / 2 ^ 8 
+                               
+Mathematically we note that 1/4 > 7/32 or 32 > 28. So P(Case 1) > P(Case 2).So we get the result that 3 heads in 4 tosses in a 
+fair coin is more likely than 5 heads in 8 tosses. This may appear counter intuitive at first but thats how the numbers play out.
+                               
+                               
