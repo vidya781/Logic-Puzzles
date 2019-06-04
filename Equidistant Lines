@@ -3,14 +3,14 @@ all three points?
 
 Solution:
 
-Let's first construct a scenario wherein we move from the collinear points to the non collinear points. Take a straight line with
-3 points on this line. When visualising how many lines are equidistant to these 3 points, we note that the line divides the plane
-into two equal halves and we could have 1 line at a distance d from the existing line L. We could treat the line L as a mirror 
-and draw another line at the same distance d but on the opposite side ( treat this as the mirror image of the first line that you have
-drawn. You could draw one more line at d' > d and draw its mirror image on the opposite side of L. Thus you could continue this
-process forever and so technically you will have infinite lines in this case when the points are collinear. Now we move to the
-non collinear points scenario. Take 2 points as constructing a line and a third point at a distance away so as to form an acute
-angled triangle.
+Let's first construct a scenario wherein we move from the collinear points to the non collinear points. Take a straight line 
+with 3 points on this line. When visualising how many lines are equidistant to these 3 points, we note that the line divides 
+the plane into two equal halves and we could have 1 line at a distance d from the existing line L. We could treat the line L 
+as a mirror and draw another line at the same distance d but on the opposite side ( treat this as the mirror image of the first
+line that you have drawn. You could draw one more line at d' > d and draw its mirror image on the opposite side of L. 
+Thus you could continue this process forever and so technically you will have infinite lines in this case when the points 
+are collinear. Now we move to the non collinear points scenario. 
+Take 2 points as constructing a line and a third point at a distance away so as to form an acute angled triangle.
 
 Draw a perpendicular from the third point to the line you have drawn with the 2 collinear points (this satisfies the non 
 collinearity property).Now draw a line parallel to the line which joins the two points and cutting the line joining the 
@@ -19,9 +19,32 @@ This is for one configuration. Any other configuration will not yield equidistan
 has to be in between the 3 points.
 
 We can have 2 more configurations similar to the above where we form the straight line in 2 more ways for the remaining points
-and keep the third point in the plane. Then in each of these cases, we will be having one line in between that will be equidistant 
-to the isolated point and the line by cutting the perpendicular from the point to the line in half.
+and keep the third point in the plane. 
+Then in each of these cases, we will be having one line in between that will be equidistant to the isolated point and the 
+line by cutting the perpendicular from the point to the line in half.
 
 Thus the total number of such lines is easily seen to be 1 + 1 + 1 = 3
 
 There are 3 such lines which are equidistant from all the three points.
+
+One could wonder will the above argument work only for acute angled triangle configuration?
+
+So in order to extend the argument to obtuse and right angled triangle, we note the following:
+
+Take the 2 points and form a line segment from it. Take another point and place it such a way so that the union of all
+3 points will be an obtuse angled triangle. Then draw a line perpendicular (call this the dotted line just for clarity) 
+to the extended base of the obtuse triangle. ( Note that in the right angled triangle, this dotted line is actually one of
+the arms of the triangle).Now exactly mid way through the dotted line, draw a line L parallel to the base of the obtuse angled
+triangle. This line is equidistant from the 3 points for if you were to draw dotted lines from each of the 3 points perpendicular
+to this line and measure their lengths, it would be equal. Viewed differently, the same obtuse angled triangle would be an 
+acute angled triangle if the base were different and that case, we have considered above. For the other obtuse angled triangle
+formed from same triangle, a similar argument would hold and be correct.
+
+For the right angled triangle, the right angle is unique in that only one angle can be a right angle and consider that arm 
+which forms this angle with the base. So now, draw a line L parallel to the base of the triangle cutting the arm at the mid point.
+It is now evident that since the right angle is just one ( 90 degrees) there is only one line in this case which is equidistant to
+all 3 points and that is the line we have drawn.
+
+So, irrespective of the configuration of the points in the plane, we can have a maximum of 3 lines that meet the criteria. We
+have exhaustively considered all possible triangles and points and formed our arguments thus.
+
