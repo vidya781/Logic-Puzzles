@@ -1,0 +1,19 @@
+Consider a square ABCD. It is easy to subdivide it into 4 squares by drawing two lines, through the centre, one of which is parallel to a pair of sides of the square and the other parallel to the other pair of sides. 
+It is not possible to subdivide the original square into 2, 3 or 5 squares ( even if not necessarily of equal size). Show that
+one can always subdivide the original square into n number of squares for all values of n, except n = 2, 3 and 5.
+
+Solution
+
+If you were to draw a line through the centre, then it would divide the square into 2 rectangles and not squares. Draw another
+line perpendicular to this line that you have already drawn and it would subdivide into 4 equal squares, albeit small in size.
+This is what is stated in the problem itself.
+
+Consider the case for unequal squares.In order not to create rectangles, divide the side into 3 equal parts, and draw a line
+parallel to one of the sides. Draw one more line perpendicular to this in such a way so that, it cuts the line so drawn and to the 
+side. You have one larger square and one smaller square juxtaposed.Draw 2 more dotted lines so that the rectangular side parts
+get converted to squares. So you have 5 smaller squares and 1 larger square.
+
+Along similar lines, we have 7 smaller and 1 bigger square. It is thus easy to add three squares to each of these by subdividing equally 
+any of the squares. Thus we can have n squares with n = 6,9,12,15.... and we can create n squares with n = 8,11,14,17....
+
+Thus one can subdivide the original square to any n number of squares ( not necessarily of equal size) except for n = 2, 3 and 5.
