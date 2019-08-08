@@ -1,0 +1,14 @@
+This one appeared in a PreRMO. The question basically asks to find the number of pairs of positive integers (x,y) that is
+x + 3y = 100?
+
+Solution:
+
+x + 3y = 100
+Therefore x = 100 - 3y
+If y = 33, x = 1
+   y = 32 , x = 4 and so on
+   so the pairs can be represented as (1,33)
+                                      (4,32)
+                                      ...
+                                      (97,1)
+  counting the pairs thus, the number of (x,y) pairs is thus 33.
