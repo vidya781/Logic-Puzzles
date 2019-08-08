@@ -1,0 +1,44 @@
+An alphametics puzzle with simple equations which appeared in an RMO.
+
+R, M and O are whole numbers
+
+RMO = 240
+RO + M = 46
+R + MO = 64
+
+We have to take one of several approaches to solve this.
+
+Treat RO as a joint entity and formulate the quadratic mainly because the second equations provides a clue.
+
+RO(M) = 240
+RO[46-RO] = 240
+
+This furthermore tells us that the product of 2 whole numbers R and O must be less than 46.
+
+Solving for RO yields [46 +- sqrt(46*46-2*240)]/2 and this on solving gives 40 and 6
+
+Now there are some possibilities:
+ R       O
+ 4       10
+ 10       4
+ 8        5
+ 5        8
+ 2        20
+ 20       2  etc
+ 
+ 2        3
+ 3        2
+ 1         6
+ 6         1  etc
+ 
+ Take the first value from this table and see if it satisfies the third equation
+ R + MO = 64
+ 4 + 10 * 6 = 64 The answer yields readily
+ So we can conclude that R = 4, O = 10 and M = 6
+ 
+ The trick in these alphametics questions is to quickly spot possibilities and eliminate absurd possibilities by mental inspection.
+ In this case we could also have proceeded to factoring 240 on but that would have been a slighty cumberson approach as we would have to deal
+ with possibilities for 3 numbers instead of two as in RO which places a restriction on the allowed values that R and O could take.
+ Hence the quadratic approach was quicker in my opinion.
+ 
+ These alphametics type problems are also used in Cryptography to code and decode messages.
