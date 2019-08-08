@@ -1,0 +1,38 @@
+S(n) = n^2 + 20n + 12
+
+n > 0 . Find the sum of all n such that S(n) is a perfect square.
+
+This problem appeared in an RMO ( 2012) .
+
+Solution:
+
+The key approach here is to first complete the square and so S(n) = (n + 10)^2 - 88 
+Now x^2 = (n+10)^2 - 88
+==> 88 = (n+10)^2 - x^ 2 = (n+10+x)(n+10-x)
+
+Now this is a factorization problem but if n is any number we must have that n+10+x and n+10-x must be both even or both odd.
+Therefore we rule out 8 * 11 as the factors due to this very reason.
+Hence we must have that 2*44 and 4 * 22 are the factors.
+We must also have n+10 > x or x-n < 10
+Let us say that n+10+x = 11 and n+10-x = 8
+Adding 2(n+10) = 19 which is not possible
+Hence we conclude that both must be even
+n + 10 + x = 44
+n + 10 - x = 2
+2(n+10) = 46 and hence n + 10 = 23 ==> n = 13
+
+In n + 10 + x = 22
+   n + 10 - x = 4
+   We have that 2(n + 10) = 26 ==> n = 3
+   
+   Thus for these particular values the summation of n yields 16.
+   
+   There's also a second kind of brute force way of solving this particular problem.
+   This time we note that 88 = (n+10)^2 - x^2
+   Now for n = 3 (n+10)^2 - 88 = 81 = 9 ^ 2
+   We keep arbitrarily plugging in values n = 4, 5, 7, 9 etc but none of them yield a perfect square. But n = 13 does.
+   So we may be tempted to think that there is a gap of 10 between 3 and 13 so the next value of n would supposedly be 23 in order
+   to continue the pattern but for n = 23, (n+10)^2 - 88 does not yield a perfect square.
+   
+   Therefore there are only 2 values that are correct and so Sn = 16. This method although tedious is a bit inelegant and leaves 
+   open an uncertainty that there could be more values that we might not have tested for in a convincing way.
