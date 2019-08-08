@@ -1,0 +1,25 @@
+This one appeared in an Indian PreRMO. It is a logical puzzle with a strong geometric flavor.
+
+The perimeter of a triangle is 7. The sides are integers. What could be the maximum possible area of the triangle?
+
+Solution:
+
+The first thing to note here that the perimeter is 7 ,ie if the sides are a, b and c then a + b + c = 7.
+We know that area is maximum when the triangle is equilateral: all sides equal but no integer combination yields a sum of 7. One of the
+sides has to have odd lengths.
+
+3,3,1 
+1,1,5 ( all odd sides but triangle inequality does not hold)
+2,2,3  
+
+So undoubtedly the triangle is isosceles.
+Hence the triangle area is sqrt(s(s-a)(s-b)(s-c)) By heron's formula
+
+And s = (a + b + c)/2 = (2 + 2 + 3)/2 = 7/2
+Area1 = sqrt(7/2 * (7/2-2)(7/2-2)(7/2-3)) = 3 Sqrt(7)/4 = 1.9843
+
+Area2 = sqrt(7/2 *(7/2-3)(7/2-3)(7/2-1)) = sqrt(35)/4 = 1.4790
+
+and clearly Area1 > Area2. 
+
+Thus the maximum possible area is 3 * sqrt(7)/4 = 1.9843
