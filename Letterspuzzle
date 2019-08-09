@@ -1,0 +1,15 @@
+A postman has to deliver five letters to five different houses. By accident, he posts one letter through each door without looking to 
+see if it is the correct address. In how many different ways could he do this so that exactly two of the five houses receive the correct 
+letters?
+
+Solution:
+
+Since exactly two of the five houses receive the correct letters, this can be done in 5   ways = 10 ways
+                                                                                       C
+                                                                                         2
+Number of ways correct letters can be put in the right houses is 1 way only.
+
+For the other 3 houses, if the correct order of the letters is (a,b,c) then all possible cases, where all 3 letters are placed wrong are,
+(b,c,a) and (c,a,b) that is in 2 ways
+
+Hence the number of ways letters are delivered correctly in 2 houses is 10 X 1 X 2 = 20 ways.
