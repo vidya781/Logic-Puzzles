@@ -1,0 +1,131 @@
+An example of a simple wordplay:
+
+Let Akbar and Birbal together have n marbles, where n > 0
+
+Akbar says to Birbal , " If I give you some marbles then you will have twice as many marbles as I will have. " Birbal says to Akbar,
+" If I give you some marbles then you will have thrice as many marbles as I will have. "
+
+What is the minimum possible value of n for which the above statements are true?
+
+
+Solution:
+
+We could straightaway take an equation based approach to solve this problem, a simple word play. But the trick here is not to jump into
+equations but rather analyze the wordplay a little deeper.
+
+When the first statement terminates, Birbal should have a minimum of 2 and Akbar should have a minimum of 1 marble.
+
+So for now between them they have a total of 3 marbles.
+
+Consider now the second statement: When the second statement terminates, Akbar should have a minimum of 3 and Birbal should have  a
+minimum of 1 marble.
+
+So, now we have a total of 4 marbles minimum in this case.
+
+Now, in order to find the minimum possible number 'n', which satisfies both the above cases, we need to take the LCM of 3 and 4
+which gives us 12.
+
+Hence, the required n = 12.
+
+An equation based approach:
+
+x + y = n -----(1) 
+
+where x = initial number of marbles with Akbar and y = initial number of marbles with Birbal
+Total = n 
+
+At the end of Akbar's statement : y + l / x - l = 2  where l is the number of marbles that Akbar gives Birbal
+
+2x - y = 3l -----(2)
+
+Now there is a subtlety of interpretation here:
+
+We formulate 2 scenarios:
+
+1) If Birbal were to give some marbles initially from what he had
+2) If Birbal were to give marbles after receiving marbles from Akbar
+
+We check for internal consistency in both cases:
+
+1] x + k / y - k = 3
+   4k = 3y - x  where k is the number of marbles that Birbal gives Akbar
+   4k = 3y - x -------(3)
+   
+   and on simplifying (2) and (3) we get 5y = (8k + 3l)
+     y = (8k + 3l)/5
+     Now we know that y has to be an integer < n
+     Plugging in some values for k and l , we hit upon k = 2 and l = 3 to yield y = 5 marbles.
+     
+     Also if we try k = 3 and l = 2, we get y = 6 marbles . At this point we have no way of knowing if Akbar or Birbal has
+     more marbles. 
+     
+  If we go by the premise that k = 2 and l = 3 it means that definitely akbar must have more than 3 marbles ( as per 1st statement)
+  and birbal must have more than 2 marbles so total number of marbles must be more than 5.
+  
+  If we go by the premise that k = 3 and l = 2 we get y = 6 so total number of marbles must definitely be more than 6 marbles.
+  
+  x + 5 = n ==> x = n - 5 ( k = 2, l = 3)
+  
+  x + 6 = n ===> x = n - 6 (k = 3, l = 2)
+  
+  Both these are valid possibilities. But we need the minimum number of marbles in the initial case.
+  
+  Notice the unique pattern that has emerged in these cases ( k = 2, l = 3) and
+                                                            ( k = 3, l = 2)
+   So the total number has to be some multiple of the above pattern for supposedly both cases to hold good. One possibility from the
+   LCM point of view is 6. So if n = 6, lets re formulate the original hypotheses.
+   
+   Akbar and Birbal have 6 marbles in total: Akbar gives 3 , so Akbar must have had more than 3 marbles which is an absurdity as if
+   he gives away these marbles he would be left with none at all and the first statement is void.
+   
+   So we go in for the next LCM which is 12 and now all statements would be valid if this were true.
+   
+   So the minimum number of marbles between them must be 12.( using diophantine equations and simple logic based arguments)
+   
+  -------
+  Now what happens if :
+  2]  If Birbal were to give marbles after receiving marbles from Akbar
+  
+  x + y = n ( Initially)
+  Let Akbar give l marbles to Birbal
+  Therefore Akbar now has: (x-l) marbles
+  Birbal has (y+l) marbles.
+  Then by the first statement (y+l)/(x-l) = 2 
+  ==> y + l = 2(x-l)
+  ==> 2x - y = 3l  -----(4)
+  
+  Now as per the second statement at this point: Birbal has y+l marbles and he now gives k marbles to Akbar
+  Therefore Akbar now has : ( x - l) + k and Birbal has ( y + l) - k
+  
+  (x-l) + k / (y + l)-k = 3
+  ==> x - 3y = 4(l-k)----(5)
+  
+  Solving for both (4) and (5) we get y = 8(k) - 5(l) / 5 wherein y = (8/5) * k - l
+  
+  For y to be a positive integer, k has to be a multiple of 5 ( 5, 10, 15....) so definitely Birbal must have had more than 5 marbles.
+  
+  and also l < (8/5) * k if k = 5
+           l < 8 { 1,2,3,4,5,6,7}
+           
+  Thus in order to determine the minimum number, if we go by the premise that Birbal has given 5 marbles to Akbar ( k = 5)
+  Birbal must have had ( y + l) - 5 and Akbar must have had (x-l) + 5 marbles.
+  
+  Now assuming 'some marbles' implies a minimum of 2 marbles, we can take l = 2 as it satisfies l < 8 ( another possibility is l = 7)
+  
+  k = 5 and l = 2 ( LCM of these is 10)
+  k = 5 and l = 3 (LCM of these is 15)
+  k = 5 and l = 4 (LCM of these is 20)
+  k = 5 and l = 5 (LCM of these is 25) ( but this would imply the exchange of marbles is the same: Akbar gives 5, Birbal gives 5
+  which may not really be true as no real exchange has taken place)
+  k = 5 and l = 6 (LCM of these is 30)
+  k = 5 and l = 7 (LCM of these is 35)
+  
+  So if we have worded the problem clearly, the minimum number in this case becomes 10 and in the next higher case it is 15.
+  So in all likelihood, if someone came up with the minimum number of marbles as 15, the ambiguity ( or the interpretation) embedded 
+  therein is taken care of as in the previous case 14 < 15.
+  
+  A case in point to show that the solution to a problem depends on one's cognitive interpretation of the problem and as long as one
+  states the hypotheses and the assumptions clearly, and the arguments justified, they are all valid propositions.
+  
+  
+  
