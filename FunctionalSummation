@@ -1,0 +1,22 @@
+This problem appeared in a pre RMO (2012). 
+Let N be the set of natural numbers.Suppose f:N-->N is a function satisfying the following conditions.
+a) f(mn) = f(m)f(n)
+b) f(m) < f(n) if m < n;
+c) f(2) = 2
+
+What is the value of sigma k = 1 to 20 f(k)?
+
+Solution:
+
+A classical functional equation that will likely yield by some plug ins.
+
+f(2) = 2
+f(2.1) = f(2)f(1) and so f(1) < f(2) as 1 < 2
+f(2)[1-f(1)] = 0
+f(1) = 1 as per the conditions of the problem
+This leads us to speculate that the function could be f(n) = n but let's confirm this.
+
+f(2.2) = f(2)f(2) = 2.2 = 4 and hence f(3) = 3 as f:N->N
+f(6) = f(3)f(2) = 3X2 = 6 and hence f(5) = 5
+
+Sigma k = 1 to 20 f(k) = sigma (n) = n(n+1)/2 = (20 * 21)/2 = 210
