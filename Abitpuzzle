@@ -1,0 +1,17 @@
+What is the sum ( in base 10 ) of all the natural numbers less than 64 which have exactly three ones in their base 2 representation?
+
+Solution:
+
+64 in base 2 is 1000000
+
+All the numbers satisfying the conditions are 6 digit binary numbers with exactly 3 ones.
+
+The highest number here will be 111000
+
+Now we need to find the number of such numbers: we note that 1,1,1,0,0,0 form the digits ( in binary ) of the highest number possible and
+the required number of such numbers will be permutations of this: This number is 6!/3!3! = 20
+
+So there are 20 numbers which have exactly three one's in their representation and hence we must have: a total of 60 '1's.
+These '1's are uniformly distributed over these 6 places in the binary representation so that each of them creates 1/6 [ 2^0 + 2^1+....+2^5]
+
+It follows that the sum of these numbers is 60 * 1/6 *[2^0 + 2^1+...+2^5] = 630
