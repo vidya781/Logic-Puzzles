@@ -1,0 +1,35 @@
+This puzzle has a strong geometric component to it and appeared in PreRMO 2013.
+
+In a triangle ABC with < BCA = 90, the perpendicular bisector of AB intersects segments AB and AC at X and Y, respectively.
+If the ratio of the area of quadrilateral BXYC to the area of triangle ABC is 13: 18 and BC = 12 then what is the length of AC?
+
+
+Solution:
+
+Let A(BCY) = y
+
+A(BXYC)/A(ABC) = (y + x)/(y + 2x) = 13/18
+              ===> y/x + 1
+                  ----------   = 13/18
+                  y/x + 2   
+                  
+              ===> 18(y/x) + 18 = 13(y/x) + 26
+              ==> y/x = 8/5
+              
+   Now, in AYX and BYX , AX = BX
+                Height XY is common, <AXY = <BXY
+                Triangles AYX congruent BYX
+                ==> AY = BY
+   Now, as BCY and BAY will have the same height BC,
+         A(BCY)/A(BAY) = CY/AY = y/2x
+         ===> CY/AY = 4/5
+         ===> CY/BY = 4/5 [ As AY = BY]
+   Now, let CY = 4t and BY = 5t
+   Using Pythagoras Theorem in BCY,
+         CY^2 + CB^2 = BY^2
+      ==> (4t)^2 + 12^2 = (5t)^2
+      ===> t = 4
+      Therefore AC = AY + CY = 9t = 36
+              
+              
+              
