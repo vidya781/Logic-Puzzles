@@ -1,0 +1,36 @@
+Each succeeding term is the sum of the cubes of the digits of the previous term. The first term is 2014. What is the 2014th term of the 
+sequence?
+( Appeared in 2014 PreRMO)
+
+Solution:
+
+We could attempt this computationally by writing an algorithm that gets the individual digits, cubes it and sums the so formed cubes and
+generate the number.
+
+However let us attempt it manually also. Maybe we will get a pattern.
+
+If the first term is 2014 , then sum of cubes of individual digits = 2^3 + 0^3 + 1^3 + 4^3 = 73
+
+Thus 73 is the second term
+
+The third term after this is obviously 7^3 + 3^3 = 370
+
+The fourth term is 3^3 + 7^3 + 0^3 = 370 and the sequence just continues ad infinitum.
+
+Therefore any term after this point is 370.
+
+Hence the 2014th term is clearly 370.
+
+Now the interesting thing is can a computer recognize the obvious pattern repeating and not compute the 2014th term and directly
+conclude that the 2014th must be 370 only
+
+What properties must be incorporated into the program for something to tell the computer this fact?
+
+If 3 successive terms are equal then we can code this into the program and thats one way of telling the computer that any term after
+this term must be 370.
+
+But the instinctive reaction that a human would possess ( so called 'a ha moment') on seeing this, can a computer parallel this thought
+process and that too without code written exclusively in order to do so.
+
+That could be key challenge for AI.
+
