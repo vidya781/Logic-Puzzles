@@ -1,11 +1,11 @@
-Each succeeding term is the sum of the cubes of the digits of the previous term. The first term is 2014. What is the 2014th term of the 
-sequence?
+Each succeeding term is the sum of the cubes of the digits of the previous term. The first term is 2014. What is the 2014th 
+term of the sequence?
 ( Appeared in 2014 PreRMO)
 
 Solution:
 
-We could attempt this computationally by writing an algorithm that gets the individual digits, cubes it and sums the so formed cubes and
-generate the number.
+We could attempt this computationally by writing an algorithm that gets the individual digits, cubes it and sums the so 
+formed cubes and generate the number.
 
 However let us attempt it manually also. Maybe we will get a pattern.
 
@@ -21,16 +21,16 @@ Therefore any term after this point is 370.
 
 Hence the 2014th term is clearly 370.
 
-Now the interesting thing is can a computer recognize the obvious pattern repeating and not compute the 2014th term and directly
-conclude that the 2014th must be 370 only
+Now the interesting thing is can a computer recognize the obvious pattern repeating and not compute the 2014th term and 
+directly conclude that the 2014th must be 370 only
 
 What properties must be incorporated into the program for something to tell the computer this fact?
 
-If 3 successive terms are equal then we can code this into the program and thats one way of telling the computer that any term after
-this term must be 370.
+If 3 successive terms are equal then we can code this into the program and thats one way of telling the computer that any 
+term after this term must be 370.
 
-But the instinctive reaction that a human would possess ( so called 'a ha moment') on seeing this, can a computer parallel this thought
-process and that too without code written exclusively in order to do so.
+But the instinctive reaction that a human would possess ( so called 'a ha moment') on seeing this, can a computer parallel 
+this thought process and that too without code written exclusively in order to do so.
 
 That could be key challenge for AI.
 
