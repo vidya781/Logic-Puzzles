@@ -1,0 +1,26 @@
+This one appeared in PreRMO 2014. ABCD is a convex quadrilateral.BD and AC which are the diagonals are perpendicular to each other.
+AB = 20, BC = 70, DC = 90. What is AD?
+
+Solution:
+
+In all such problems, it goes without saying that a diagram is the first thing that one must take recourse to.
+
+Let E be the intersection point between the two diagonals AC and BD.
+
+(AE)^2 + (BE)^2 = (AB)^2 = (20)^2 ----(1)
+
+(BE)^2 + (CE)^2 = (BC)^2 = (70)^2 -----(2)
+
+(CE)^2 + (DE)^2 = (CD)^2 = (90)^2 -----(3)
+
+Now these three equations are all that we have to proceed further. We need to find an unknown called AD.
+
+Adding (1) and (3) and subtracting (2)
+
+(AE)^2 + (BE)^2 + (CE)^2 + (DE)^2 - (BE)^2 - (CE)^2 = (20)^2 + (90)^2 - (70)^2 
+
+(AE)^2 + (DE)^2 = 400 + 8100 - 4900
+
+(AD)^2 = 3600 = (60)^2 
+
+Hence AD = 60
