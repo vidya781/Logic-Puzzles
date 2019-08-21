@@ -1,0 +1,19 @@
+What is the smallest possible natural number n for which the equation x^2 - nx + 2014 = 0 has integer roots?
+
+Appeared in PreRMO 2014
+
+Solution:
+
+Note firstly that the product of 2 roots = 2014
+
+As they are integers, both of them should be divisors of 2014.
+
+As 2014 = 2 X 19 X 53, possible roots (1,2014),(-1,-2014),(2,1007),(-2,-1007),(19,106),(-19,-106),(38,53) and (-38,-53).
+
+As n is sum of the roots, the least possible natural number for n = 38 + 53 = 91
+
+We could also have calculated the discriminant b^2-4ac and proceeded from there but it would have been slightly more cumbersome.
+  D = n^2-4(2014) >=0 
+  ==> n >= sqrt(4X2014) = sqrt(4 X 1 X 19 X 53 X 2) = 91 
+  
+Hence the least possible natural number n is 91
