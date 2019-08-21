@@ -116,13 +116,13 @@ We check for internal consistency in both cases:
   k = 5 and l = 3 (LCM of these is 15)
   k = 5 and l = 4 (LCM of these is 20)
   k = 5 and l = 5 (LCM of these is 25) ( but this would imply the exchange of marbles is the same: Akbar gives 5, Birbal gives 5
-  which may not really be true as no real exchange has taken place)
+  which may not really be true as no real exchange has taken place assuming exactly identical marbles that both of them possess)
   k = 5 and l = 6 (LCM of these is 30)
   k = 5 and l = 7 (LCM of these is 35)
   
   So if we have worded the problem clearly, the minimum number in this case becomes 10 and in the next higher case it is 15.
   So in all likelihood, if someone came up with the minimum number of marbles as 15, the ambiguity ( or the interpretation) embedded 
-  therein is taken care of as in the previous case 14 < 15.
+  therein is taken care of as in the previous case 12 < 15.
   
   A case in point to show that the solution to a problem depends on one's cognitive interpretation of the problem and as long as one
   states the hypotheses and the assumptions clearly, and the arguments justified, they are all valid propositions.
