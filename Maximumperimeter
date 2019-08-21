@@ -1,0 +1,31 @@
+In a triangle with integer side lengths, one side is three times as long as a second side, and the length of the third side is 17.
+What is the greatest possible perimeter of the triangle?
+
+This one appeared in PreRMO 2014.
+
+Solution:
+
+Let ABC be the traingle with a = 17, b and c being the other two sides.
+
+b/c = 3 ( by definition)
+
+17 + b > c
+=> 17 + 3c > c So c = 1,2,...but this gives little to no information on the bound
+as we get 17 + 2c > 0
+
+b + c > a
+3c + c > 17
+4c > 17
+Therefore min value c can take = 5
+
+If c = 5, b = 15
+
+Also a + c > b
+==> 17 + c > 3c
+==> 17 > 2c
+Therefore we have an upper bound on c, c(max) = 8
+Hence b = 3(8) = 24
+Perimeter P(max) = 24 + 8 + 17 = 49
+
+Here in this problem, it was vital to see the upper and lower bounds and get one side of the triangle in between this range. The allowable
+values of the other sides follow suit as per definition and given information.
