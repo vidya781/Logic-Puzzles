@@ -1,0 +1,27 @@
+This problem appeared in PreRMO 2014.
+In a Triangle XOY, XOY = 90 degrees. Met M and N be the midpoint of legs OX and OY respectively. Suppose that XN = 19 and YM = 22.
+What is XY?
+
+Solution:
+
+The first thing to do in this problem is to as usual draw a diagram representing the triangle.
+
+In order to simplify things, we note that we can piece out the 2 right triangles embedded within the right traingle XOY
+
+We know (XY)^2 = (OX)^2 + (OY)^2 -----(1)
+
+If we let OX = x and OY = y , then OM = (x/2) = MX and ON = (y/2) = NY as per definition.
+
+In triangle NOX as per pythagoras theorem, (19)^2 = (y^2/4) + x^2 ----(2)
+
+In triangle MOY as per pythagras theorem (22)^2 = (x^2/4) + y^2 -----(3)
+
+Therefore, we can solve for x and y but thats not what we actually need. We need (x^2 + y^2) as this is (XY)^2.
+
+(2) and (3) are beautifully modified to yield this: just add them
+(22)^2 + (19)^2 = 5/4 (XY)^2
+(XY)^2 = 4/5 [(22)^2 + (19)^2] = 4 X 169
+==> XY = 26
+
+Thus sometimes if we note the question carefully, a lot of unnecessary calculation can be done away with.
+
