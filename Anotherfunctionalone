@@ -1,0 +1,20 @@
+Let f be a one-to-one function from the set of natural numbers to itself such that f(mn) = f(m)f(n) for all natural numbers m and n.
+What is the least possible value of f(999)?
+
+Appeared in PreRMO 2014
+
+Solution:
+
+We first note that 999 = 3^3 X 37 thus revealing the primes that constitute it.
+
+Define for each prime p f(p) = q where q is a number and q is also a prime
+
+But can q be 1?
+
+f(p^2) = f(p) = 1 and the values are no longer unqiue as per definition
+
+So f(999) = f(3^3 X 37) = f(3)^3 X f(37)
+
+This is lowest when we define f(3) < f(37) and they are as low as possible.
+
+So define f(3) = 2 and f(37) = 3 giving f(999) = 24 as the lowest possible value.
