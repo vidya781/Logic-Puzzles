@@ -1,0 +1,18 @@
+Let x1,x2,....,x2014 be real numbers different from 1, such that x1 + x2 +....+x2014 = 1 and 
+
+x1/(1-x1) + x2/(1-x2) +.....+ x2014/(1-x2014) = 1
+
+What is the value of
+
+x1^2/(1-x1) + x2^2/(1-x2) +....+x^2(2014)/(1-x2014) ?
+
+Appeared in PreRMO 2014.
+
+Solution:
+
+We are presented with a complex expression so the first goal is to try and sigma simplify it
+
+Sigma x1^2/(1-x1) = sigma [x1 + (x1^2 - x1)]/(1-x1) = Sigma x1/(1-x1) - Sigma(x1) = 1 - 1 = 0 ( as per definition)
+
+Thus by elegant algebraic treatment, we have modified a complex expression nullifying it something extremely simple and thus
+deriving the value of the expression.
