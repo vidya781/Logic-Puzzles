@@ -1,0 +1,39 @@
+For natural numbers x and y, let (x,y) denote the Greatest common divisor of x and y. How many pairs of natural numbers x and y
+with x <= y satisfy the equation xy = x + y + (x,y)?
+
+This appeared in preRMO 2014.
+
+Solution:
+
+The presence of the GCD component makes it menacing as there could be lot of possibilities.
+
+Lets first try x = y
+
+x^2 = 2x + (x,x)
+==> x^2-3x = 0
+==> x[x-3] = 0
+Rejecting x = 0 as x is a natural number by definition
+==> x = 3
+
+Thus (3,3) is one solution
+
+For x < y
+if we take x >= 3
+==> 3y <= xy = x + y + (x,y)
+But x + y + (x,y) < y + y + y = 3y
+
+So we have a situation where both inequalities are in contradiction with each other.
+
+Hence x < 3 so the only possible values are {1,2}
+
+For x = 1, the equation becomes: 1.y = 1 + y + (1,y) and there is no solution here
+
+For x = 2, 2y = 2 + y + (2,y) we get y - 2 = (2,y)
+
+if y = 3 then LHS = 1 and RHS = (2,3) = 1 so the equation is satisfied.
+
+if y = 4 then LHS = 4-2 = 2 and RHS = (2,4) = 2 so the equation is satisfied.
+
+So (2,3) and (2,4) are also solutions.
+
+The total number of solutions is 3 : (3,3),(2,3) and (2,4)
