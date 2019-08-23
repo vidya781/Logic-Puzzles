@@ -1,0 +1,17 @@
+Let ABCD be a convex quadrilateral with < DAB = < BDC = 90 degrees. Let the incircles of triangles ABD and BCD touch BD at P and Q
+,respectively, with P lying in between B and Q. If AD = 999 and PQ = 200 then what is the sum of the radii of the incircles of the
+triangles ABD and BDC?
+
+This appeared in a preRMO .
+
+Solution:
+
+As usual, a diagram is very instructive. Assume that the incircle of ABD touches AD at E and the inradius of ABD and BCD be r1 and r2.
+Thus, AE = r1 and DE = AD - AE = 999 - r1
+Also Triangle DEO congruent to traingle DPO (as OD is common side and PO = OE)
+Therefore DE = DP
+Also, DQ = r2 = DP - PQ = DE - 200 = 999 - r1 - 200 = 799 - r1
+==> r2 = 799 - r1
+==> r2 + r1 = 799
+
+Thus,the sum of the radii of the incircles of triangles ABD and BDC = 799
