@@ -1,0 +1,26 @@
+One morning, each member of my family drank an 8-ounce mixture of coffee and milk. The amounts of coffee and milk varied from cup to
+cup, but they were never zero. I drank 1/7th of the total amount of milk and 2/17th of the total amount of coffee. The question is:
+
+How many people are there in my family?
+
+Solution:
+
+This puzzle appeared in a preRMO. 
+
+The first thing to note is that there is a 7 in the denominator of the total amount of milk, so the entire amount must be of the form 7A.
+
+Amount of coffee, likewise must be of the form 17B.
+
+Therefore ratio of the amount of milk and coffee drank by me to that of the total milk and coffee = ( A + 2B )/(7A + 17B)
+
+Now, ratio is always of the form 1/n, where n is the number of people in the family.
+
+So, (7A + 17B)/(A + 2B) should be an integer
+
+(7A + 17B)/(A + 2B) = (7A + 14B + 3B)/(A + 2B) = 7 + 3B/(A + 2B)
+
+In 3B/(A + 2B) , as A is a natural number, 0 < 3B/(A + 2B) < 3/2
+
+Again, as 3B/(A + 2B) is an integer value, the only possible integer here is 1.
+
+Hence the number of people in the family = n = 7 + (3B/(A+2B)) = 7 + 1 = 8 
