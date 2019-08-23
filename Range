@@ -1,0 +1,15 @@
+For now many natural numbers n between 1 and 2014 ( both inclusive ) is 8n/(9999-n) an integer?
+
+Appeared in preRMO 2014
+
+Solution:
+
+Let 8n/(9999-n) = k
+==> n = 9999k/(8 + k)
+Now, 1 <= 9999k/(8 + k) <= 2014
+===> 8/9998 <= k <= 16112/7985
+==> This gives us only 2 integer values for k as 1 and 2
+Let's plug in the values, k = 2, n is not an integer
+for k = 1, we have n = 1111, which is an integer, hence it satisfies the given condition.
+
+Therefore, we have only 1 natural number n in the given range, for which (8n)/9999-n is an integer.
