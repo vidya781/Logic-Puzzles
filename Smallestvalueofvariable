@@ -1,0 +1,28 @@
+For a natural number b, let N(b) denote the number of natural numbers a for which the equation x^2 + ax + b = 0 has integer roots.
+What is the smallest value of b for which N(b) = 20?
+
+This appeared in pre RMO 2014.
+
+Solution:
+
+Sum of the roots = -a, Product of roots = b
+
+As a is a natural, we will consider only integer roots which are divisors of b.
+
+If b is a perfect square, then there will be an odd number divisor and even number of divisors if it is not.
+
+When, number of divisors d is odd, possible values of a, N(b) = ( d + 1)/2
+
+And, when d is even, possible values of a, N(b) = d/2
+
+Given N(b) = 20, therefore d is 39 or 40
+
+Now, we know that the number of divisors for a number with prime factor factorization, 2^p3^q5^r.... is (p+1)(q+1)(r+1)....
+
+Let's now see all cases with as small factors as possible and as small powers as possible.
+
+For d = 39, the possible numbes with 39 divisors are 2^38,2^12.3^2
+
+For d = 40, the possible numbers with 40 divisors are 2^39,2^19.3,2^9.3^3,2^9.3.5,2^4.3^3.5,2^4.3.5.7
+
+Of all the above numbers, the least is teh last term 1680 which is the number we wanted.
