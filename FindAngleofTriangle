@@ -1,0 +1,15 @@
+In Triangle ABC, let I denote the incenter. Let the lines AI, BI and CI intersect the incircle at P,Q and R respectively. If < BAC = 40
+then what is the value of < QPR in degrees?
+
+This appeared in PreRMO 2014.
+
+Solution:
+
+The line from vertex to incenter bisects the angle. Therfore < IAC = A/2 and < ICA = C/2
+Therefore < RIP = < AIC = 180 - [(A + C)/2] 
+
+Also, in Triangle PIR as IP = IR
+<IRP = <IPR = 1/2(180 - <RIP) = (A + C)/4
+Similarly in Triangle PIQ, < IPQ = (A + B)/4
+Now, <OPR = <IPR + <IPQ = ( 2A + B + C)/4 = (2A + 180 - A)/4 = ( A + 180 )/4 = 55 degrees.
+
