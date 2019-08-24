@@ -1,4 +1,5 @@
-For a natural number b, let N(b) denote the number of natural numbers a for which the equation x^2 + ax + b = 0 has integer roots.
+For a natural number b, let N(b) denote the number of natural numbers a for which the equation x^2 + ax + b = 0 has integer 
+roots.
 What is the smallest value of b for which N(b) = 20?
 
 This appeared in pre RMO 2014.
@@ -25,4 +26,4 @@ For d = 39, the possible numbes with 39 divisors are 2^38,2^12.3^2
 
 For d = 40, the possible numbers with 40 divisors are 2^39,2^19.3,2^9.3^3,2^9.3.5,2^4.3^3.5,2^4.3.5.7
 
-Of all the above numbers, the least is teh last term 1680 which is the number we wanted.
+Of all the above numbers, the least is the last term 1680 which is the number we wanted.
