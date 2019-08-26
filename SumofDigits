@@ -1,0 +1,14 @@
+Let E(n) denote the sum of the even digits of n. For example, E(1243) = 2 + 4 = 6.
+What is the value of E(1) + E(2) + E(3) + ..... + E(100)?
+
+Appeared in preRMO 2015
+
+Solution:
+
+We need to sum the even numbers in unit and ten's digit ( one and two digit numbers both counted)
+
+Number of 2 in unit digit 10 times and in tens digit 10 times, so that makes a total of 20 times.
+
+Similarly, number of 4, 6, 8 all three digits, 20 times each.
+
+So, sum = ( 2 + 4 + 6 + 8) x 20 = 400
