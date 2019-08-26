@@ -1,0 +1,15 @@
+Let P(x) be a non-zero polynomial with integer coefficients.If P(n) is divisible by n for each positive integer n, what is the 
+value of P(0)?
+
+Appeared in pre RMO 2015
+
+Solution:
+
+By Fundamental Theorem of Algebra,
+
+P(n) - P(m) is divisible by n-m
+So P(n) - P(0) is divisble by n
+As P(n) is divisible by n for every positive integer n, so P(0) is also divisible by n for all n
+So P(0) = 0
+
+This problem illustrates a standard application of the fundamental theorem of Algebra
