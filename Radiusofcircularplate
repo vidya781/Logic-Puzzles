@@ -1,0 +1,15 @@
+There is a broken piece of circular plate made of glass. It is semicircular in shape. C is the midpoint of AB, and D is the midpoint
+of arc AB. Given that AB = 24 cm and CD = 6 cm, what is the radius of the plate in centimetres?
+
+Solution :
+
+This piece that has broken is part of a larger structure, the Euclidean circular shaped glass plate.
+Now extend DC to meet the circle at E.
+As C is the midpoint of AB, we obtain that DE is a diameter.
+
+Using the product of segments of intersecting chords are equal we get
+
+AC X BE = DC X CE 
+12 X 12 = 6 X CE
+CE = 24
+Hence DE = DC + CE = 30 which is the diameter wherein we obtain the radius as 15
