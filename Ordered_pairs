@@ -1,0 +1,67 @@
+What is the number of ordered pairs (A, B) where A and B are subsets {1,2,....5} such that neither A (= B nor B (= A?
+
+The symbol (= means to be a subset of 
+Therefore A (= B means A is a subset of B
+
+Appeared in PreRMO 2014
+
+Solution:
+
+None of A nor B could be the empty set as the empty set is the subset of every set.
+If A is the singleton set, possible number of sets for A are (5C1) = 5 ( any one of the 5 elements could be in the set)
+If B be the singleton set , we cannot select an element that is already present in A for then that element would end up becoming the 
+subset.
+
+So this leaves 4C1 = 4 possible number of different sets for B
+
+If B be the set of 2 elements then 4C2 = 6 possible number of different sets
+If B be the set of 3 elements then 4C3 = 4 possible number of different sets
+If B be the set of 4 elements then 4C4 = 1 possible number of different sets
+
+B obviously cannot contain all 5 elements as in that case A will be a subset of B as mentioned
+
+So, total possible number of ordered pairs (A,B) when A is a singleton set = 5(4 + 6 + 4 + 1) = 75
+
+If A be the set of 2 elements, so, possible number of sets for A are 5C2 = 10 ways
+
+Now, if B be the singleton set, then 3C1 = 3 possible number of different sets
+
+If B be the set of 2 elements then 2C1.3C1 +3C2 = 9 possible numbers of different sets, as in addition to selecting two of the leftover
+elements, one of the elements of A can also be in set B
+
+If B be the set of 4 elements, then leave one element out and select the other elements in B so effectively 2C1.3C2 = 2 possible number
+of different sets
+
+And B cannot have 5 elements for the reasons mentioned priorly.
+
+So total possible number of ordered pairs (A,B) when A is a set of 2 elements = 10(3 + 9 + 7 + 2) = 210
+
+Now, if A be the set of 3 elements, so, possible number of sets of A are 5C3 = 10
+
+Then following are the possibilities for set B for each set of A
+
+If B be the singleton set then 2C1 = 2 possible number of different sets
+If B be the set of 2 elements then 3C1.2C1 + 2C2 = 7 possible number of different sets, as in addition to selecting 2 from the leftover
+2 elements one of the elements of set A can also be in set B
+
+If B be the set of 3 elements then 3C2.2C1 + 3C1.2C2 = 9 possible number of different sets
+
+If B be the set of 4 elements then 3C2.2C2 = 3 possible number of different sets
+
+Again, B cannot have 5 elements for the reasons stated earlier.
+So, total possible number of ordered pairs(A,B) when A is a set of 3 elements = 10(2 + 7 + 9 + 3) = 210
+
+Now, if A be the set of 4 elements, possible number of sets of A are 5C4 = 5
+The following are the possibilities for set B for each set of A
+
+If B be the singleton set then only one possible number of different sets
+
+If B be the set of 2 elements then 4C1.1 = 5 possible number of different sets as one of the elements of A can also be in set B
+
+If B be the set of 3 elements then 4C2.1 = 6 possible number of different sets
+
+If B be the set of 4 elements then 4C3.1 = 4 possible number of different sets
+
+So, the total number of ordered pairs (A,B) when A is a set of 4 elements = 5(1 + 5 + 6 + 4) = 80
+
+So, total possible number of ordered pairs (A,B) = 75 + 210 + 210 + 80 = 575
