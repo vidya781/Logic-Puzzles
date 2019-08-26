@@ -1,0 +1,14 @@
+How many two-digit positive integers n have the property that the sum of N and the number obtained by reversing the order of the digits 
+of N is a perfect square?
+
+Appeared in PreRMO 2015
+
+Solution:
+
+Let the unit digit be x and ten's digit be y
+So the number is 10y + x and reversing the order we get 10x + y
+So the sum = 11(x + y)
+For the above number to be a perfect square x + y must be 11 or 11 X 4 etc
+But the maximum sum of  x + y can be 18
+So x + y = 11
+As x and y are single digit numbers x can be from 2 to 9 and hence there are 8 numbers
