@@ -1,0 +1,54 @@
+A man walks a certain distance and rides back in 15/4 hours; he could ride both ways in 2.5 hours. How many hours would it take him
+to walk both ways?
+
+Appeared in pre RMO 15
+
+Solution:
+
+Let the time taken for one way riding be r and time taken for walking be w
+
+From the information give, we gather that
+
+w + r = 15/4
+
+2r = 5/2
+
+and so r = 5/4
+
+From (1) and (2) we have w = 10/4
+
+So time taken to walk both ways = 2 X 10/4 = 5 hours
+
+A physicist who would think in terms of speed, time and distance would formulate the following:
+
+Speed of walking = V(w)
+Speed of riding = V(r)
+
+Let d be the distance ( one way)
+Therefore V(w) = d/t1
+V(r) = d/t2
+V(w) + V(r) = d[1/t1 + 1/t2]
+V(w) + V(r)/d = (t1 + t2)/t1t2
+t1t2 = (15/4)d/(V(w) + V(r)-------(1)
+
+V(r) = d/t1'
+t1' = d/V(r)
+t2' = d/(V(r) // rides both ways
+
+t1' + t2' = 5/2 = 2d/V(r)
+Therefore V(r)/d = 4/5
+
+Walking both ways:
+V(w) = d/t1
+What we need is 2d/V(w)
+
+t2/V(w) = 15/4(V(w) + V(r))
+t2[ 1 + V(r)/V(w)] = 15/4
+But t2 = d/V(r)
+d/V(r)[ 1 + V(r)/V(w)] = 15/4
+d/V(w) = 15/4 - d/V(r)
+2d/V(w) = 30/4 - 2d/V(r) = 30/4 - 10/4 = 5 hours
+
+Thus, a physicist and a logician would take different approaches to arrive at the same answer. In this case, it is the physicist 
+who takes the longer, contrived approach as opposed to the simple logic applied by the logician. This example is very instructive
+in demonstrating the flexibility of a mindset in approaching or viewing a problem from different perspectives.
