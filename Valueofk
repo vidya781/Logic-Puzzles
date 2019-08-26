@@ -1,0 +1,14 @@
+The equations x^2 -4x + k = 0 and x^2 + kx - 4 = 0, where k is a real number, have exactly one common root. What is the value of k?
+
+Appeared in a PreRMO 2015
+
+Solution:
+
+Subtracting the two equations, we get (k+4)x - (k+4) = 0
+==> (k+4)[x -1] = 0
+==> Either k = -4 or x = 1
+k = -4 gives both equations identical and hence ruled out, so x must be equal to 1
+(1)^2 -4(1) + k = 0
+==> k = 3
+
+So the value of k is 3
