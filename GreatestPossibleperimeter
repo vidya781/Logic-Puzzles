@@ -1,0 +1,24 @@
+What is the greatest possible perimeter of a right angled triangle with integer side lengths if one of the sides has length 12?
+
+Appeared in preRMO 2015
+
+Solution:
+
+Hypoteneuse is the largest side and so must be greater than 12. 
+Consider the triangle ABC with right angle at B, so b = hypotenuse. Without loss of generality, let a = 12 and c is the other side.
+
+b^2 = a^2 + c^2
+b^2 = 144 + c^2
+b^2 - c^2 = 144
+(b+c)(b-c) = 144
+and factorising 144 = 12 X 12
+                    = 2 X 72
+                    = 4 X 36
+                    = 2 X 2 X 4 X 9
+                    
+b + a = 72
+b - a = 2
+
+2b = 74 , ==> b = 37, a = 35
+Therefore this is the combination that yields the maximum perimeter = 37 + 35 + 12 = 84 
+(had we gone in for b + a = 144 and b - a = 1, we get 2b = 145 and b no longer is an integer)
