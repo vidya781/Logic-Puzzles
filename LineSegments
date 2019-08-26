@@ -1,0 +1,9 @@
+How many line segments have both their endpoints located at the vertices of a given cube?
+
+Appeared in a PreRMO 2015
+
+Solution:
+
+There are 8 vertices in a cube. These can be called points. So number of ways of selecting 2 endpoints from 8 of these is 8C2 = 28 
+
+Therefore the number of line segments that have both endpoints located at the vertices of a given cube is 28
