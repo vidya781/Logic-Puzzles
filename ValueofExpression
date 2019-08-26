@@ -1,0 +1,32 @@
+Positive integers a and b are such that a + b = a/b + b/a 
+What is the Value of a^2 + b^2?
+
+Appeared in PreRMO 2015
+
+Solution:
+
+Plug in the values, we must have a > 0 and b > 0
+if we have that a and b take different values let a = 1 , b = 2 ( or vice versa)
+
+LHS: 1 + 2 = 3
+RHS: 1/2 + 2/1 = 0.5 + 2 = 2.5
+
+LHS =/= RHS
+
+Hence (1,2) or (2,1) not a solution
+
+We could arbitrarily plug in some numbers, but lets try and modify the equation 
+
+Given:
+a + b = a/b + b/a
+a + b = (a^2 + b^2)/ab
+Thus a^2 + b^2 = ab(a+b)
+Also, Sum of 2 positive squares : 
+1^2 + 1^2 = 2 = 2.1
+2^2 + 3^2 = 4 + 9 = 13 = 13.1, ab = 13, a + b = 1 not possible at all
+So we can take a slightly different approach:
+a^2.b + b^2.a = a^2 + b^2
+a^2(b-1) + b^2(a-1) = 0
+As a and b are both positive integers, so a-1 and b-1 both are non-negative
+So, both the terms are non negative and hence the sum is zero if both are zero or a = 1 and b = 1
+Hence a^2 + b^2 = 1^2 + 1^2 = 1 + 1 = 2
