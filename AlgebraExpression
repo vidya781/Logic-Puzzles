@@ -1,0 +1,18 @@
+Let a,b and c be real numbers such that a - 7b + 8c = 4 and 8a + 4b - c = 7
+
+What is the value of a^2 - b^2 + c^2 ?
+
+Appeared in PreRMO 2015
+
+Solution:
+
+a + 8c = 4 + 7b
+8a - c = 7 - 4b
+
+Squaring both sides:
+
+(a + 8c)^2 + (8a - c)^2 = (4 + 7b)^2 + (7-4b)^2
+=> a^2 + 16ac + 64c^2 + 64a^2 -16ac + c^2 = 16 + 56b + 49b^2 + 49 - 56b + 16b^2
+=> 65a^2 + 65c^2 = 65 + 65b^2
+=> a^2 + c^2 = 1 + b^2 or a^2 - b^2 + c^2 = 1
+
