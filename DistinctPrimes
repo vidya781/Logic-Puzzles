@@ -1,0 +1,13 @@
+Let n be the largest integer that is the product of exactly 3 distinct prime numbers,x,y and 10x + y, where x and y
+are digits. What is the sum of the digits of n?
+
+Appeared in a preRMO 2015
+
+Solution:
+
+Prime digit sample set { 1,2,3,5,7 }
+
+If we take 10x + y = 10(7) + 3 = 73 
+10(7) + 1 = 71 are both primes but the largest integer would be obtained by 73 therefore x = 7, y = 3
+n = (73)(7)(3) = 1533 
+Sum of digits = 1 + 5 + 3 + 3 = 6 + 6 = 12
