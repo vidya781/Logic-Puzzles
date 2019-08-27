@@ -1,0 +1,30 @@
+Let a,b, c be such that a + b + c = 0
+P = a^2/(2a^2 + bc) + b^2/(2b^2 + ca) + c^2/(2c^2 + ab) is defined
+Value of P ?
+
+Appeared in PreRMO 2015
+
+Solution:
+
+a^2 + a(-b-c) + bc = 0
+2a^2 + bc = a^2 - ab - ac + bc = -(a-b)(c-a)
+
+Similarly,
+2b^2 + ac = b^2 - ab - ac + ac
+          = b(b-a) + c(a-b) 
+          = b(b-a) - c(b-a)
+          = (b-c)(b-a)
+          = -(a-b)(b-c)
+          
+ 2c^2 + ab = -(c-a)(b-c)
+ 
+ So the given expression,
+ P = a^2/(2a^2 + bc) + b^2/(2b^2 + ca) + c^2/(2c^2 + ab)
+  = -a^2/(a-b)(c-a) - b^2/(b-c)(a-b) -c^2/(c-a)(b-c)
+  = -a^2(b-c) + b^2(c-a) + c^2(a-b)/(a-b)(b-a)(c-a)
+  = (-a^2(b-c) + b^2c - b^2a + ac^2 - bc^2)/(a-b)(b-c)(c-a)
+  = -a^2(b-c) + b^2c - bc^2 - (b^2a - ac^2)/(a-b)(b-c)(c-a)
+  = -a^2(b-c) + bc(b-a) - a(b-c)(b+c)/(a-b)(b-c)(c-a)
+  = -(b-c)(a^2 + bc -ab -ac)/(a-b)(b-c)(c-a)
+  = -(b-c)(a-b)(c-a)/(a-b)(b-c)(c-a) 
+  = 1 
