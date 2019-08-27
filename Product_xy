@@ -1,0 +1,21 @@
+3^&x + 2^y = 985 ----(1)
+3^x - 2^y = 473 -----(2)
+
+What is xy?
+
+Appeared in a PreRMO 2015
+
+Solution:
+
+Adding the two equations:
+
+2.3^x = 1458
+
+==> 3^x = 1458/2 = 729 = 3^6
+==> x = 6
+
+Substituting in (1),
+3^6 + 2^y = 985
+2^y = 985 - 3^6 = 256
+==> y = 8
+Product xy = 48
