@@ -1,0 +1,9 @@
+A 2X3 rectangle and a 3X4 rectangle are contained within a square without overlapping at any interior point, and the sides
+of the square are parallel to the sides of the two given rectangles. What is the smallest possible area of the square?
+
+Appeared in preRMO 2015
+
+Solution:
+
+As we have 2X3 rectangle and 3X4 rectangle non overlapping the size of the square cannot be less than 5
+That is possible if 2X3 rectangle is adjacent to 3X4 rectangle, so minimum size of square is 5 and the area = 5X5 = 25
