@@ -1,0 +1,21 @@
+Digits of positive integer n are 4 consecutive integers in decreasing order when read from left to right.
+Sum of possible Remainders when n is divided by 37?
+
+Appeared in PreRMO 2015
+
+Solution:
+
+We are given 4 consecutive integers that constitute the number. The smallest 4 digit number is 3210
+hence if 3210 is divided by 37, remainder is 28
+
+if 1111 is added to 3210 we get 4321, the next higher number with the constraint.
+
+When 4321 is divided by 37, remainder is 29 ( 28 + 1 )
+
+There are 7 such numbers with 1st digit from 3 to 9
+
+Highest such number = 9876
+Remainder when divided by 37 = 34
+
+So the sum of the remainders = 34 + 33 + 32 + 31 + 30 + 29 + 28 = 217
+
