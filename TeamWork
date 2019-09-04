@@ -1,0 +1,21 @@
+A contractor has two teams A and B. Team A can complete a job in 12 days and team B can do the same job in 36 days. 
+Team A starts working on the job and team B joins team A after 4 days. The team A withdraws after two more days. For how many
+more days should team B work to complete the job?
+
+Appeared in PreRMO 2017
+
+Solution:
+
+We formulate some equations immediately: Team A speed = W/12 = a 
+Team B speed = W/36 = b 
+
+Let n days more be needed to complete the work:
+
+4a + 2(a+b) + bn = W . where W is the total work to be completed and the symbols have their meanings as defined above
+6a + b(n+2) = W
+=> 6W/12 + (n+2)W/36 = W
+=> [18W + (n+2)W]/36 = W
+=> 18 + (n+2) = 36
+=> n = 16
+Therefore 16 more days would be required by Team B to complete the job working after Team A withdraws.
+
