@@ -1,0 +1,19 @@
+In a class, the total number of boys and girls are in the ratio 4:3. On one day it was found that 8 boys and 14 girls
+were absent from the class, and that the number of boys was the square of the number of girls. What is the total number
+of students in the class?
+
+Appeared in PreRMO 2017
+
+Solution:
+
+We formulate the equations thus: 
+Let the number of boys = 4x
+Number of girls = 3x
+We are given that 4x - 8 = (3x - 14)^2
+=> 4x - 8 = (3x - 14)^2
+=> 4x - 8 = 9x^2 - 84x + 196
+=> 9x^2 - 88x + 204 = 0
+=> (x - 6)(9x - 34) = 0
+=> x = 6
+Total number of students = 7x = 42
+
