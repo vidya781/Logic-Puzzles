@@ -1,0 +1,21 @@
+Let a,b be integers such that all the roots of the equation (x^2 + ax + 20)(x^2 + 17x + b) = 0 are negative integers.
+What is the smallest possible value of a + b?
+
+Appeared in PreRMO 2017
+
+Solution:
+
+We note that both equations are independent, we need to find the smallest value of both a and b.
+
+As roots are negative, hence both a and b are positive integers.
+
+x^2 + ax + 20 = 0 if m,n are the roots of this equation, then
+
+mn = 20, and m + n = - a
+Now, 20 = 1 X 20 = 2 X 10 = 4 X 5
+=> Possible values of a are 21, 12, 9
+
+x^2 + 17x + b = 0 if p,q are the roots of this equation, then 17 = p + q, then b = pq
+Now, 17 = 1 + 16 = 2 + 15 = 3 + 14 = 4 + 13 = 5 + 12 = 6 + 11 = 7 + 10 = 8 + 9
+=> Possible values of b are 16,30,42,52,60,66,70 and 72
+The minimum value of a + b is 9 + 16 = 25
