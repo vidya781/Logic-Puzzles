@@ -1,0 +1,27 @@
+Find the coefficient of a^5b^5c^5d^6 in the expansion of (bcd + acd + abd + abc)^7
+
+Appeared in PreRMO 2016.
+
+Solution:
+
+(bcd + acd + abd + abc)^7
+  |     |     |     |
+  |     n times     p times
+ m times      |
+             o times
+             
+Comparing the power of a,b,c and d in a^5b^5c^5d^6, we get
+  
+  n + o + p = 5 ----(1)
+  m + o + p = 5 ----(2)
+  m + n + p = 5 ----(3)
+  m + n + o = 6 ----(4)
+  
+from (1) and (2), m = n
+from (2) and (3) n = o
+from (3) and (4) o = p + 1
+So m = n = o = p + 1
+=> m = n = o = 2 and p = 1
+By the multinomial theorem,
+The required coefficient is (7!)/(2!)(2!)(2!)(1!) [bcd]^2[acd]^2[abd]^2[abc] = 630
+  
