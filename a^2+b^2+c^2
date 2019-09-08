@@ -1,0 +1,20 @@
+This problem appeared in PreRMO 2018.
+
+a + b = 1 + c .....(1)
+a^2 + b^2 = c^2 - 1 .....(2)
+What are all the possible values of a^2 + b^2 + c^2?
+
+Solution:
+
+Squaring (1)
+a^2 + 2ab + b^2 = 1 + 2c + c^2
+c^2-1 + 2ab = 1 + 2c + c^2
+2ab = 1 + 2c + 1
+2ab = 2 + 2c
+=> ab = 1 + c
+Since a, b are integers, 2 + 2 = 2X2, and 0X0 = 0 + 0
+Max value  of a^2 + b^2 + c^2 = (2)^2 + (2)^2 + (3)^2   ( as 4 = c + 1, c= 3)
+                              = 17
+Max value of a^2 + b^2 + c^2 = 0 + 0 + 1 = 1 ( as c = 1 in this case)
+Total sum = 17 + 1 + 18
+
