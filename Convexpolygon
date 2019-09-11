@@ -1,0 +1,9 @@
+A convex polygon has its interior angles in arithmetic progression, the least angle being 120 and the common difference
+being 5 degrees. Find the number of sides of the polygon.
+
+Solution
+
+Given A.P is 120,125,130...the sum of interior angles of a polygon = (n-2)180
+Hence sum of n terms of AP = n/2[2.120 + (n-1).5)=180(n-2) 
+=> n = 9,16
+But if n = 16, then 16th angle = 120 + 15.5 = 195 > 180 which is not possible and hence n = 9
