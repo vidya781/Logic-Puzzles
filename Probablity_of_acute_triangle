@@ -1,0 +1,28 @@
+P is randomly chosen point in a unit square. Connect P with the vertices of the base. Find the probability that the triangle
+is acute angled.
+
+This wonderful problem appeared in PreRMO 2018.
+
+Solution:
+
+In this case, there are three possibilities:
+a) The formed triangle is acute angled
+b) The formed triangle is right angled
+c) The formed triangle is obtuse angled
+
+It is again vital to draw a neat figure with DC as the base of the semicircle so that going anticlockwise direction
+DCBA is the square and diagonals AC and BD intersect at O. Let the side of the square be a.
+
+All the points ON the semicircle DOC will give rise to right angled triangles when joined to the base vertices D and C.
+
+All the points inside the semicircle DOC will give rise to obtuse angled triangles when joined to the base vertices D and C.
+
+All points, outside the semicircle DOC , ie in the area ABCOD, will give rise to acute angled triangle when joined to D and C.
+
+We use the area for finding the required probability.
+
+Area of the square is a^2.
+So, area of the region ABCOD where the point P will form an acute angled triangle
+     = a^2 - Pi(a/2)^2 x (1/2) = a^2 - pi (a^2/8)
+     
+Therefore possibility that triangle PDC will be acute angled = [a^2-(pi.a^2/8)]/a^2 = 17/28
