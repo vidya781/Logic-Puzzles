@@ -1,0 +1,24 @@
+A square sheet of paper ABCD is so folded that B falls on the midpoint M of CD. Prove that the crease will divide BC
+in the ration 5:3
+
+This one appeared in PreRMO 2018.
+
+Solution:
+
+Let ABCD be a square with side 'a' units.
+Let PQ be the crease formed when the paper ABCD is folded.
+
+Let QC = x
+
+When the paper will be folded along the crease PQ, B must coincide with M
+Therefore BQ = QM = a - x
+Also since M is the mid point of BC. Then MC = a/2
+In T(QCM), MC^2 + QC^2 = QM^2
+==> a^2/4 + x^2 = (a-x)^2
+==> a^2/4 + x^2 = a^2 + x^2 - 2ax
+==> 3a^2/4 = 2ax
+==> a/x = 8/3
+==> a/x - 1 = 8/3 - 1
+==> (a-x)/x = 5/3
+Therefore we get BQ:QC = 5:3
+Thus the crease will divide BC in the ratio of 5:3
