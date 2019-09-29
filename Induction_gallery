@@ -1,0 +1,29 @@
+Generally a lot of Olympiad problems yield themselves to the inductive techniques namely of mathematical induction. That is if one 
+assumes the truth holding for k then one typically goes on to prove the truth holding for the next higher value k + 1 using the
+facts available at one's disposal.
+
+This is a classic example of using this technique.
+
+Prove that :
+
+11^(n+2) + 12^(2n+1) is divisible by 133 for any natural number
+
+Solution:
+
+133 = 1*7*19
+
+P(n) = 11^(n+2) + 12^(2n+1)
+P(1) = 11^(1+2) + 12^(2(1)+1)
+     = 11^3 + (11)^3 + 3*(11)^2 + 3*(11)(1)^2 + 1 = 2.(11)^3 + 3.(11)^2 + 3.11 + 1 = 2.(11)^2.11 + 3.(11)^2 + 3.11 + 1
+     = 11^2(22+3) + 3.11 + 1 = 11^2(25) + 34 = 3059 and 23| P(1) so P(1) is true
+     
+Assume that 133|11^(k+2) + 12^(2k+1)
+P(k+1) = 11^(k+3) + 12^(2k+3) = 11^(k+2).11 + 12^(2k+1).12^2 = 11^(k+2).11 + 12^(2k+1)(11 + 133)
+P(k+1)/133 = [11(11^(k+2) + 12^(2k+1))]/133 + [12^(2k+1).133]/(133)
+
+As per induction assumption, 133 | 11^(k+2) + 12^(2k+1) and for any k, 133|12^(2k+1).133
+Therefore 133| P(k+1)
+Hence 11^(n+2) + 12^(2n+1) is divisible by 133
+
+
+
