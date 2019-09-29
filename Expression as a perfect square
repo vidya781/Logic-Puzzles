@@ -1,0 +1,23 @@
+Let S(n) = n^2 + 20n + 12, n > 0
+Find the sum of all possible values of n for which S(n) is a perfect square?
+
+Solution: S(n) = n^2 + 20n + 12 = (n+10)^2 - 88 = x^2 ( as S(n) is a square)
+
+For n to be positive,
+ (n+10)^2 - x^2 = 88
+ (n + 10 + x)(n + 10 - x) = 88 
+ Now n + 10 > x
+ 
+ Both the factors of 88 should be even as for both n + 10 + x and n + 10 - x either both are even or both are odd.
+ Now the two such possible cases for factors of 88 are 88 = 2 X 44 = 4 X 22
+ 
+ n + 10 + x = 44
+ n + 10 - x = 2
+ => 2(n+10) = 46
+ => n = 13
+ 
+ n + 10 + x = 22
+ n + 10 - x = 4
+ => 2(n + 10) = 26, n = 3
+ So the two solutions are n = 13 and n = 3 
+ => Sum = 16
