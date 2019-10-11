@@ -1,0 +1,14 @@
+The digits 1,2,3,4 and 5 are each used once to compose a 5-digit abcde such that the 3-digit number abc is divisible by 4,
+bcd is divisible by 5, and cde is divisible by 3. Find the 5 digit number abcde.
+
+Solution:
+
+5|bcd then d = 5
+
+Since 4|cde we have 3| c + d + e
+
+If c = 2 then 3 | (2 + 5 + e) => e is a multiple of 3
+
+From which we have e = 3
+
+Now a, b In { 1, 2 } , since 214 is not a multiple of 4, we must have a = 1, b = 2 , so the solution is abcde = 12453
