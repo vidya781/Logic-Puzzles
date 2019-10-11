@@ -1,0 +1,11 @@
+Three circles a,b and c are tangent to each other at point P . The center of b is on c and the center of a is on b. Find
+the ratio of the area of shaded regions to the total area of unshaded regions enclosed by circles.
+
+Solution:
+
+Let the radius of c is r
+So radius of b and c is 2r and 4r, respectively
+So areas are 16(pi)(r^2),4(pi)(r^2) and (pi)(r^2) respectively
+So shaded region = 4(pi)(r^2) - (pi)(ri)^2 = 3(pi)(r^2)
+So unshaded region = 16(pi)(ri)^2 - 3(pi)(ri)^2 = 13(pi)(ri)^2 
+So the ratio is 3:13
