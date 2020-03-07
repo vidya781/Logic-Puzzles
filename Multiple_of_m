@@ -1,0 +1,31 @@
+If m is a prime number and a,b are 2 numbers < m prove that a^(m-2) + a^(m-3)b + a^(m-4)b^2 + .... + b^(m-2) is a multiple of m.
+
+Solution :
+
+As m is prime and a, b are two numbers both < m.
+
+(a,m) = 1 and (b,m) = 1
+
+By Fermat Theorem,
+
+a^(m-1) = 1 mod m
+b^(m-1) = 1 mod m
+
+Subtracting , a^(m-1) - b^(m-1) = 0 mod m
+
+m | (a^m-1 - b^m-1)
+
+a | (a-b)(a^(m-2) + a^(m-3)b +...+ b^(m-2))
+
+(m,(a - b)) = 1
+
+As a < m, b < m 
+=> a - b < m and m is prime
+
+By the Gauss theorem,
+
+m | a^(m-2) + a ^(m-3) b + .... + b ^(m-2) 
+Therefore ( a ^ (m-2) + a^(m-3) +.... + b ^(m-2) ) is a multiple of m
+
+(if a | bc and (a,b) = 1, then a | c)
+
