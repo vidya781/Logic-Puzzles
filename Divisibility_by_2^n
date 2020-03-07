@@ -1,0 +1,11 @@
+
+Let a,b be odd integers and n is a natural number. a-b is divisible by 2^n iff a^3 - b^3 is divisible by 2 ^ n.
+
+Now a ^ 3 - b ^ 3 = (a - b) (a^2 + ab + b ^ 2)
+                  = (a - b)( (a-b)^ 2 + 3 ab)
+ 
+ 
+ Now a, b are odd integers, therefore 3 ab is an odd integer, Also ( a - b) is an even integer and ( a - b)^ 2 + 3 ab is an odd
+ integer.
+ 
+ Therefore a ^ 3 - b ^ 3 is divisible by 2 ^ n iff a - b is divisible by 2 ^ n.
