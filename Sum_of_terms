@@ -1,0 +1,51 @@
+Prove that 1^1997 + 2^1997 + .....+ 1996^1997 is divisible by 1997.
+
+This appeared in an INMO.
+
+Solution :
+
+(1^1997 + 1996^1997) + (2^1997 + 1995^1997).....+(998^1997 + 999^1997)
+
+We could write each bracket is of the form (ai^2n+1 + bi^2n+1) divisble by ai+bi 
+
+But ai+bi = 1997 for all i.
+
+Each bracket and hence their sum is divisible by 1997.
+
+
+
+
+Prove that S = 1! + 2! + 3! + ... + 100! divided by 24 is the number 9.
+
+4! = 0 mod 24
+5! = 0 mod 24
+100! = 0 mod 24
+
+4! + 5! + ...+ 100! = 0 mod 24
+
+1! + 2! + 3! = 9 mod 24
+
+1! + 2! + 3! + 4! + 5! +....+ 100! = 9 mod 24
+
+Therefore 9 is the remainder when the term S is divided by 24
+
+
+Show that the 4th power of every number is of the form 5k or 5k + 1 where k is any integer.
+
+Solution : 
+
+Let a be any integer and as 5 is prime and a is any number either (a,5) = 1 or 5 | a.
+
+Case 1 :
+
+(a,5) = 1
+
+By the Fermat Theorem, a ^ 4 = 1 mod 5 
+                      hence 5 | a ^ 4 - 1
+                      Therefore a^4 - 1 = 5k
+                      ===> a^4 = 5k + 1
+                      
+Case 2 : 5 | a^4
+        a^4 = 5k
+        
+        
