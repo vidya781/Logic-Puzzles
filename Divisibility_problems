@@ -1,0 +1,111 @@
+We look at some problems on divisibility
+
+Show that :
+
+1] a ^ 18 - b ^ 18 is div by 133 if a and b are coprime to 133.
+
+   (a,133) = 1. 
+   (b,133) = 1
+   
+   Now 133 = 19 X 7 
+   Therefore a and b are coprime to 19 
+   (a,19) = 1
+   (b,19) = 1
+   
+   Also 19 is itself prime
+   
+   By the Fermat Theorem, 
+   
+   a ^ 18 cong 1 mod 19 ( cong refers to conguent to )
+   b ^ 18 cong 1 mod 19 
+   
+   Subtracting these congruences,
+   
+   a ^ 18 - b ^ 18 cong 0 mod 19
+   
+   Hence a ^ 18 - b ^ 18 is divisible by 19
+   
+   Again , if a and b are coprime to 133, a and b are coprime to 7 ( as 7 is a factor of 133 )
+   
+   Also 7 is prime,
+   
+   a ^(7-1) cong 1 mod 7
+   b ^(7-1) cong 1 mod 7
+   
+   Raising to power 3 both these congruences,
+   
+   a ^ 18  cong 1 mod 7
+   b ^ 18 cong 1 mod 7
+   
+   Subtracting these congruences,
+   
+   (a ^ 18 - b ^ 18) cong 0 mod 7
+   
+   Therefore a ^ 18 - b ^ 18 is divisible by 7 and as the expression is divisible by both 19 and 7 and (19,7) = 1
+   we have the assertion.
+   
+2] n ^ 11 - n is divisible by 11 for any integer n
+
+   11 is a prime number and n ^ 11 cong n mod 11 ( a ^ p cong a mod p)
+   Hence n ^ 11 - n is divisible by 11
+   
+3] a ^ 12 - b ^ 12 divisible by 13 if a and b are coprime to 13
+
+   13 is prime and (a,13) = 1
+   
+   By Fermat Theorem, a ^ (13 - 1) cong 1 mod 13 ---(1)
+   b ^ ( 13 - 1 ) cong 1 mod 13 ----(2)
+   
+   Subtracting congruences,. a ^ 12 - b ^ 12 cong 0 mod 13
+   ( a ^ 12 - b ^ 12) is divisible by 13
+   
+4] n ^ 16 - a ^ 16 is div by 85 if n and a are coprime to 85
+
+  As (n,85) = 1 and (a,85) = 1
+  
+  As 17 x 5 = 85 , 17 is a divisor of 85 and 17 is prime as well.
+  
+  By the fermat theorem, n ^ ( 17 - 1) cong 1 mod 17, n ^ 16 cong 1 mod 17 and similarly a ^ 16 cong 1 mod 17 ---(1)
+  
+  again, as both n and a are coprime to 85
+  
+  therefore n and a are both coprime to 5 ( as 5 is a factor of 85 )
+  
+  By Fermat theorem, n ^ 4 cong 1 mod 5
+                     a ^ 4 cong 1 mod 5
+                     
+  Raising both congruences to power 4 ( as a cong b mod m, a ^ n cong b ^ n mod m ), n ^ 16 cong 1 mod 5, a ^ 16 cong 1 mod 5
+  
+  Subtracting these congruences, n ^ 16 - a ^ 16 cong 0 mod 5,  ---(2)
+  
+  therefore ( n ^ 16 - a ^ 16 ) is div by 5
+   from (1) and (2), n ^ 16 - a ^ 16 is divisible by 85 ( 17 x 5 as (17,5) = 1 )
+   
+5] If n > 1 is always odd, then n ^ 3 - 2 n ^ 2 + n is div by 4.
+  
+  given expression : n ( n ^ 2 - 2n + 1 )= n (n-1) ^ 2 = n (n - 1)(n - 1)
+  Since n is odd, (n-1) even , (n-1)n = 2k also n-1 = 2k as it is even.
+  As (n-1)n(n-1) = 4qk = 4m, of the form 4m which clearly means it is div by 4
+  
+6] let m and n be two integers such that m = n^2 - n , show that m ^ 2 - 2m is div by 24.
+
+    E = m(m-2) = (n^2-n)(n^2-n-2) = n(n-1)(n-2)(n+1) = (n-2)(n-1)n(n+1) which is the product of 4 consecutive integers since the
+    product of 4 consecutive integers is div by 4 ! = 24
+    Hence the assertion.
+    
+7] The 8th power of any number if of the form 17n or 17n +- 1
+
+  Let a be any integer
+  as 17 is prime and a is any n number
+  Either (a,17) = 1 or 17 | a
+  
+  Case 1 : (a,17) = 1
+  Also 17 is prime.
+  By the fermat theorem, a ^ 16 cong 1 mod 17
+  Hence 17 | a ^ 16 - 1 or 17 | (a ^8 - 1) ( a^8 + 1 )
+  Either 17 | ( a ^ 8 - 1 ) or 17 | ( a ^ 8 + 1 )
+  As a ^ 8 - 1 = 17n  a^8 = 17n + 1, a ^ 8 + 1 = 17n, a^8 = 17n - 1 ----(1)
+  Case 2 : 17 | a , 17 | a ^ 8, a^8 = 17n ----(2)
+  
+  Thus from both of these equations, we say that 8th power of any number is of the form 17n or 17n +- 1
+    
