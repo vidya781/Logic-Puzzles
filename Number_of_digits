@@ -14,13 +14,14 @@ What is the possible approach we could take ?
 2 ^ 22 = 4194304   7 
 2 ^ 24 = 16777216. 8 digits
 
-2 ^ ( 7 digit number ) = some large number
+2 ^ ( 7 digit number ) = some very large number
+
+We must take a log approach to solve this exponentially large number but how does one test the hunch ?
 
 log ( 4194304 ) = 6.62265990461
 y = 2 ^ (2 ^ 22) 
 => log(y) = 4194304 . log (2) = 1262611.31
-=> Multiply this by the base which is 2 to get 7 * 2 = 14 
-Hence there are 14 digits in this large number.
+
 
 Testing the hunch :
 
