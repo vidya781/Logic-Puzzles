@@ -1,0 +1,37 @@
+How many digits are there in 2 ^ 2 ^ 22?
+
+The objective is to find out how many digits are there in such large numbers .
+
+What is the possible approach we could take ?
+             Number of digits
+2 ^ 2 = 4.         1
+2 ^ 4 = 16         2
+2 ^ 7 =.  128      3
+2 ^ 10 = 1024.     4
+2 ^ 14 = 16834     5
+2 ^ 17 = 131072.   6
+2 ^ 20 = 1048576.  7
+2 ^ 22 = 4194304   7 
+2 ^ 24 = 16777216. 8 digits
+
+2 ^ ( 7 digit number ) = some large number
+
+log ( 4194304 ) = 6.62265990461
+y = 2 ^ (2 ^ 22) 
+=> log(y) = 4194304 . log (2) = 1262611.31
+=> Multiply this by the base which is 2 to get 7 * 2 = 14 
+Hence there are 14 digits in this large number.
+
+Testing the hunch :
+
+3 ^ 8 = 6561 which has 4 digits
+Now 8 * log(3) = 8 * (0.47712) = 3.81 
+Let F[] stand for the floor value 
+In this case, d = F[] + 1
+d = F[log(3 ^ 8) ] + 1 = F[3.8169] + 1 = 3 + 1 = 4
+Aliter : d = C[] where C is the ceiling value = C[log(3 ^ 8)] = 4
+
+So 2 ^ (2 ^ 22) = 2 ^ ( N) 
+N = 2 ^ 22 
+Finding the number of digits in 2 ^ 22 = log(2 ^ 22) = 22 X log ( 2) = 6.6226 wherein d = 7 ( if one applies the ceiling or floor formula)
+So the problem reduces to finding the number of digits in 2 ^ ( 4194304 ) = which is log(2) * 4194304 + 1 = 1262611 + 1 = 1262612
