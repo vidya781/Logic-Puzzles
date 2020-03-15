@@ -1,0 +1,75 @@
+We are posed with the following question:
+
+What is is highest power of 3 dividing 500!
+
+Solution : Surely there is the formulaic approach to this problem. But can we build out the solution step by step.
+
+We start by elementary steps. Take 3 ! = 3 X 2 X 1 = 6 and 3 divides 6 completely and so the highest power of 3 in this situation
+is 3 X 2 X 1 / 3^ 1 = 2 and the index of 3 in the Denominator is 1. 
+
+4! = 4 X 3 ! and 4 is not divisible by 3 at all and so the index of 3 remains at 1
+Now the same is true for 5 ! as 5 is not div by 3
+When we go to 6 ! which is 6 X 5! , 6 is div by 3 , so index is incremented by 1 for complete division.
+
+So we assert that highest power or index of 3 that divides 6 ! is 2 and at this point, the Denominator has completely divided the numerator 6!
+
+We could depict this as :
+
+3 ! = 3 X 2 / 3 = 2 and Index_of_3 = 1
+
+4 ! = 4 X 3 X 2 X 1 / 3 = 8 and Index_of_3_here = 1 and the Numerator = 4 X 2 X 1 = 8 
+Now this number is still larger than 3 and 8 / 3 gives a quotient of 3 and a remainder of 2 
+and 2 is less than 3 and so the only power or index of 3 that will divide this 3 ^ 0 = 1 
+
+So at this point the highest power of 3 is 1 ( which we had earlier , the Index_of_3) and 1 which gives us a quotient of 3 , that 
+is 1 + 1 = 2
+
+Now its starting to become clear why we use the step function and higher powers of the prime 3
+
+We reason thus :
+                                                Highest_power
+Take 3 ! and write out : 3 X 2 X 1 / 3                1
+4 ! Now 4 > 3 so we write 4. 3 !
+                          -----                       1 + 1 = 2
+                          3 . 3
+                          
+ Does it agree with our intuition? 
+ We know that 4 ! = 24 and 3 ^ 2 = 9 and 3 ^ 3 = 27 > 24 and hence doesnt wholly divide.
+ 
+ So 9 = 3 ^ 2 and hence the highest power of 3 is 2 and they correlate well.
+ 
+ [ 0.5 ] = 0, [7.2] = 7, [6.999] = 6 by the definition of step function.
+ 
+ [ 4 / 3 ] = 1 ( Quotient = 1)
+ 
+ But 4 ! = 4 X 3 X 2 X 1 and so applying the step function to correlate with our intuition yields a recursive application
+ of the step function in that : [ 4 / 3. 3/3. 2/3 . 1/3] = [ 4/3] [3/3] [2/3] [1/3] = 1 + 1 + 0 + 0 = 2
+ 
+ Why does the Quotient method work ?
+ 
+ 4 X 3 X 2 X 1
+ -------------   = 4 X 2 X 1  = 8 and 8 > 3 and so some index of 3 will still divide 8 , now quotient of 3 in 8 = 3 X 2 + 2
+ and so quotient is 2 , remainder is 2 and if we now apply step function on remainder , [ 2 / 3 ] = 0 
+ 
+ so final index in this case is 2.
+ 
+ Lets take 16 ! = 16 X 15 X 14 X 13 X 12 X 11 X 10 X 9 X 8 X 7 X 6 X 5 X 4 X 3 X 2 X 1 
+                  --------------------------------------------------------------------
+                        3 ^ ( p) 
+                        
+                        where p is some integer 
+  since 9 X 3 = 27 we know p > 3 as 3 ^ 3 = 27
+  if p = 4 , 12 on the numerator is divisible  completely and hence p > 4 
+  We could increment one more p and 15 on the Numerator would be divisible completely by it and hence p > 5 
+  Now collect out numbers in the numerator divisible by 3 and they are { 15, 12, 9 , 6, 3 } so surely p > 5 
+  The remaining numbers on the Numerator { 16,14,13,11,10,8,7,5,4,2, 1 }
+  Now 3 ^ 5 = 243
+  The next higher p is 6 and hence p = 6
+  Confirming by the formulaic method : [ 16 / 3 ] = 5 and [ 5 / 3 ] = 1 and adding the quotients we get 6.
+  
+  Extrapolating this to much higher numbers like 500 !, we see that 
+  [500/3] = 166, [166/3] = 55, [55/3] = 18, [18/3] =  6 , [6/3] = 2 , [2/3] = 0 
+adding the quotients yield = 247
+
+The basic goal of this exercise was to primarily understand the intuition behind the formula which obviously is the right way
+for larger numbers. 
