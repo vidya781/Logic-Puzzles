@@ -35,4 +35,4 @@ Aliter : d = C[] where C is the ceiling value = C[log(3 ^ 8)] = 4
 So 2 ^ (2 ^ 22) = 2 ^ ( N) 
 N = 2 ^ 22 
 Finding the number of digits in 2 ^ 22 = log(2 ^ 22) = 22 X log ( 2) = 6.6226 wherein d = 7 ( if one applies the ceiling or floor formula)
-So the problem reduces to finding the number of digits in 2 ^ ( 4194304 ) = which is log(2) * 4194304 + 1 = 1262611 + 1 = 1262612
+So the problem reduces to finding the number of digits in 2 ^ ( 4194304 ) = which is log(2) * 4194304+1=1262611+1=1262612
