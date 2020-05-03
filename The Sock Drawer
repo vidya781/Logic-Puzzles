@@ -1,0 +1,90 @@
+A drawer contains red socks and black socks. When two socks are drawn at random, the probability that both are red is 1/2.
+a) How small can the number of socks in the drawer be?
+b) How small if the number of black socks is even?
+
+Solution :
+
+If conjecture that the number of socks must initially be at least 3 for in this case we can have 2 red socks and 1 black sock
+and definitely we rule out the minimum number as two as if both are red, the probability would be one and there is no black
+sock at all which is not what the problem states.
+
+More formally, if we set x as the number of red socks and y the number of black socks, we must have the following:
+
+P( both socks are red) = x
+                           C
+                             2
+                        -------   = 1/2 ( from the problem statement)
+                         x+y
+                            C
+                              2
+                              
+                  => (x + y)(x + y - 1) = 2x(x-1)
+                  and noting that the RHS is even, the term on LHS must also be even.
+  if x+y = 2p, x+y-1 is odd
+  if x+y = 2 ( for p = 1)
+  then x + y - 1 = 2 - 1 = 1
+  But this would mean x = 1, y = 1 that is one black sock and one red sock which is not possible as both socks drawn are red
+  
+  if x + y = 3, x+y-1 = 2 so that LHS = 6 but RHS = 4 , so the equation does hold good in this case
+  
+  So we increase y by 1 and see what we get : x = 2, y = 2
+  LHS = 12 and RHS = 12 as well , therefore if x = 3 and y = 1 the equation is clearly satisfied.
+  Then x + y = total number of socks = 4
+  Hence in probability type problems as these, intuition must always be justified with the supporting calculations that corroborates
+  or contradicts the intuition.
+  
+  To tackle the second aspect of the problem, y = 2p ( given)
+  (x+y)(x+y-1) = 2x(x-1)
+  (x+2p)(x+2p-1) = 2x(x-1)
+  2p[2(x+p)-1] = x(x-1) and treating it algebraically, we have
+  2p is even clearly for any p, therefore either x or x-1 should be of the form 2k to get an even number on LHS.
+  In the previous case, we had x = 3, y = 1
+  Suppose we have y = 4, p = 2 as y = 2p
+  4[2(x+2)-1] = x(x-1),=> 4[2x + 3] = x(x-1)
+  => 8x + 12 = x^2-x and on solving we find x is not an integer. In particular we must have that the discriminant should 
+  be a perfect square.
+  Moving on, we try y = 6 so p = 3 , 2 x 3[2(x+3)-1] = x(x-1) 
+  6[2x + 5] = x^2 - x, => x^2 - 13x-30 = 0 and D = 289 so it is a perfect square, therefore solving for x yields x = 15 
+  ( as we reject the negative value) and so y = 6 , so total number of socks = x + y = 15 + 6 = 21
+  
+  Inequality method : ( Mosteller's method)
+  
+  Lets do a numerical example first: If there are 5 red and 2 black socks, then probability of the first sock being red 
+  would be 5/(5+2) . If the first were red, the probability of the second being red would be 4/(4+2)as one red sock had 
+  already been removed.
+  Product of these = 5/(5+2) X 4/(4+2) = 10/21 which is NOT exactly half.
+  So deep dive algebraically:
+  Let there be r red and b black socks.Probability of the first sock being red = r/(r+b) and the probability that the second
+  sock being red now that the first sock has been removed = (r-1)/(r+b-1) 
+  So r/(r+b)X (r-1)/(r+b-1) = 1/2
+  One could just start with b = 1 and try successive values of r and then go on to b = 2 and try again and so on but lets 
+  try some juggling :
+  r/(r + b) > (r-1)/(r+b-1) for b > 0
+  (r/r+b)^2 > 1/2 > (r-1/r+b-1)^2
+  Taking square roots, we have for r > 1
+  r/(r+b) > 1/sqrt(2) > r-1/(r+b-1)
+  From the first inequality we get r > 1/sqrt(2). (r+ b) ( on the numerator)
+  or r > 1/sqrt(2)-1 . b = (sqrt(2) + 1)b
+  From the second we get, (sqrt(2) + 1)b > r-1
+  (sqrt(2) + 1)b + 1 > r > (sqrt(2) + 1)b
+  For b = 1, r must be > 2.414 and < 3.414 and so the candidate is r = 3.
+  For r = 3, b = 1 we get P(2 red socks) = 3/4. 2/3 = 1/2 
+  So the smallest number of socks is 4
+  Beyond this we look at even values of b
+  
+  b         r is between.      eligible r    P(2 red socks)
+  ----      -------------       ---------    -------------
+  2.         5.8, 4.8             5           5(4)/7(6) not equal to 1/2
+  
+  4.         10.7, 9.7.           10          10(9)/14(13) not equal to 1/2
+  
+  6.         15.5, 14.5.          15.         15(14)/21(20) = 1/2
+  
+  And so 21 socks is the smallest number when b is even.
+  If we were to go on and ask for further values of r and b so that the probability of
+  two red socks is 1/2, we would be wise to appreciate that this is a problem in the theory of numbers.
+  It happens to lead to a famous result in Diophantine Analysis obtained from Pell's equation. 
+  As a passing example, try r = 85, b = 35
+  
+  
+                             
