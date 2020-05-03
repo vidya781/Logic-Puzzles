@@ -1,0 +1,37 @@
+This problem appeared Frederick Mosteller's book Fifty Challenging Problems in Probability.
+
+The goal of this puzzle is to bring out the counter intuitiveness and the calculation aspects of probability problems.
+
+To encourage Elemer's promising tennis career, his father offers him a prize if he wins ( atleast ) two matches in a row
+in a three match series to be played alternatively with his father and the club champion.It is known that the club champion
+is a better player than the father. So what strategy should Elmer choose ? Father-Champion-Father or Champion-Father-Champion?
+
+Solution:
+
+Since Elmer has a better chance of winning against his father rather than the club champion given the known facts, it would 
+seem he must choose the first strategy : that is Father-Champion-Father ( F-C-F) instead of C-F-C.
+
+But let the calculations tell the story :
+
+Set with.   F.       C.      F.     Prob                    C.       F.       C.      Prob
+            W.       W.      W      f c f                   W.       W.       W.       c f c
+            W.       W.      L.     f c (1-f)               W.       W.       L        c f (1 - c)
+            L        W.      W.     (1-f)c f                L        W        W.       (1-c)f c
+            
+   Totals                          f c (2-f)  [P1]                                     f c (2-c). [P2]
+   
+   Where W = winning a match, L = losing a match
+   f = probability of winning against father
+   c = probability of winning against champion
+   
+   On comparing the two strategies, we know that f > c from the given facts for Elmer, so the term in bracket for the 1st
+   strategy is less than the one in the second case with the result that in overall probability , P2 > P1 
+   
+   Lets take an example with numbers: if f = 0.5 and c = 0.3
+   P1 = 0.5 X 0.3 X ( 2 - 0.5) = 0.225
+   
+   While P2 = 0.5 X 0.3 X ( 2 - 0.3) = 0.255
+   
+   Thus it is clear that the importance of winning the middle match outweighs the disadvantage of playing the club champion twice.
+   
+   
