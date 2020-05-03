@@ -1,0 +1,16 @@
+Prove that for n > 1, n^4 + 4^n is never a prime.
+
+Solution:
+
+We first need to use the sophie germain identity : a^4 + 4b^4 = a^4 + 4a^2b^2 + 4b^4 - 4a^2b^2 = (a^2 + 2b^2)^2-(2ab)^2
+= (a^2 + 2b^2 + 2ab)(a^2 + 2b^2 - 2ab)
+
+If n is even, then n^4 + 4^n is even and larger than 2. Thus it is not a prime. So we need to show the assertion for odd n 
+only. But for odd n = 2k + 1, we can make the following transformation, getting the Sophie Germain Idenity:
+
+n^4 + 4^n = n^4 + 4.4^(2k) = n^4 + 4.(2^k)^4 which has the form a^4 + 4b^4 
+Hence the assertion that n^4 + 4^n is never a prime
+
+On this basis we ask : is 4^545 + 545^4 a prime?
+
+The above is equal to 545^4 + 4.(4^138)^4 which is the left side if the SG identity. Hence not a prime.
