@@ -1,0 +1,28 @@
+This problem originally appeared in HMO 1974 and is attributed to Erdos.
+
+Two nonoverlapping squares of sides a and b are placed inside a square of side 1. Prove that a + b <= 1
+
+Solution:
+
+We consider various configurations : Non overlapping means our possibilities get restricted within the space enclosed 
+by the square. 
+
+They can touch each other or not touch. Since they both are inside the square at any arbitrary location , if they do not 
+touch each other, we can choose a and b, arbitrarily small and varied so that a + b is always < 1
+
+We can set up a coordinate system such that the main square is defined as follows : O(0,0), A(1,0),B(1,1) and C(0,1)
+
+If the two squares are contiguous and touch each other externally, then we must have s1 + s2 = 1 in the case that the sides
+of the squares are along the length of the main square and constitute it wholly. In such a scenario, a + b = 1 clearly.
+
+Consider a different configuration : along the diagonals. If the squares touch each other along the diagonals, and constitute
+it wholly, we have a.sqrt(2) + b.sqrt(2) = sqrt(2) , => a + b = 1
+
+This is the scenario in case of orientation along either diagonal and is the extreme case.
+
+The final case comes from the diamond configuration along the X or the Y axis.
+In this case also because the squares touch at a single point in the diamond config, the diagonals are a.sqrt(2) and b.sqrt(2)
+and we must have a.sqrt(2) + b.sqrt(2) = 1
+In this case, a + b = 0.707 < 1
+
+Therefore in consideration of all cases, we can infer that a + b <= 1
