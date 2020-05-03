@@ -1,0 +1,41 @@
+A point P inside the equilateral triangle ABC of side s has distances 3,4 and 5 from the vertices A,C and B respectively. 
+Find s.
+
+This one is off Engel from Transformation Geometry.
+
+Solution:
+
+A couple of approaches here. We consider both.
+
+Setting up the correct equations and solving them is the key here.
+
+Let < PBC = T ( as in theta)
+< ABP = 60-T
+
+Using the Cosine rule we get the equations as follows :
+
+cos < APB = (34 - s^2)/30.     (1)
+cos < BPC = (41 - s^2)/40.     (2)
+cos < CPA = (25 - s^2)/24.     (3)
+
+Also,
+cos T = ( 9 + s^2 )/10s.       (4)
+cos(60-T) = (16 + s^2)/10s.    (5)
+
+cos60 cosT + sin60sinT = ( 16 + s^2 )/ 10 s
+Simplifying, 
+3[ 1-(9 + s^2)^2/100s^2] = (s^2 + 23)^2/100.s^2
+s^4 -50s^2 + 193 = 0
+s^2 = [50 +/-  sqrt(432)]/2
+s^2 = 25 +/- 12 sqrt(3)
+Therefore we can have s = sqrt(25 + 12 sqrt(3)) or s = sqrt(25-12 sqrt(3)) = 4.215 but we discard this value as distance from
+inside the traingle to the vertex cannot be more than the side itself.
+
+Hence we must have that s = 6.766
+
+Engel's solution :
+
+Reflect the point P at the sides BC, CA, and AB respectively to A', B' and C'. The area of the hexagon AC'BA'CB' can be 
+computed in two ways. On the one hand, it is twice the area of T(ABC) ie s^2 sqrt(3)/2. On the other hand, it is the area 
+of the rectangular triangle A'B'C' with sides 3sqrt(3),4sqrt(3) and 5sqrt(3) together with the areas of the triangles AC'B,
+BA'C' and CB'A' which we know from the two sides and the included angle 120 deg. We get s = sqrt(25 + 12sqrt(3))
