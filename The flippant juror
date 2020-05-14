@@ -1,0 +1,21 @@
+This is also adapted from Mosteller.
+
+A three man jury has two members each of whom has a probability p of making the correct decision and a third member who flips 
+a coin for each decision ( majority rules ). A one-man jury has probablity p of making the correct decision. Which jury has the 
+better probability of making the correct decision?
+
+Solution :
+
+Given the independence of judgement, we see that the two jurors have the same chance of a correct decision. So if the two 
+serious jurors take their decision, their joint decision is with a probability of p X p = p^2 of the cases and in these cases,
+the decision of the third indecisive juror does not matter as the majority rules. 
+
+Other cases : Where the serious jurors oppose each other, so that the probabilities in this case of "correct" decision will
+be p and (1-p) respectively with the indecisive juror flipping the coin. If we take p to be the probability of reflecting the 
+correct decision then p(1-p) will be the joint probability. If a fair coin is used, then 1/2 *p(1-p)
+
+In the third case : the flippant juror will go with the (1-p) cause this will be the correct probability, so again the joint probability
+taken by the jury will be p(1-p) , So when a fair coin is used, 1/2*(1-p)p
+
+Total probability : p^2 + 1/2*p(1-p) + 1/2*(1-p)p = p^2 + p(1-p) = p^2 + p - p^2 = p which is identical with probability of a 
+one man jury.
