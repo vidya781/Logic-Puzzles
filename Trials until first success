@@ -4,7 +4,7 @@ On the average, how many times must a die be thrown until one gets a 6?
 
 Solution:
 
-Assuming a fair die, seems intutive to guess that at least 6 times, the die must be thrown to get a 6
+Assuming a fair die, seems intuitive to guess that at least 6 times, the die must be thrown to get a 6
 and this is the worst case scenario.
 Let p be the probability of a 6 on a given trial. Then the probabilities of success for the first time 
 on each trial are ( q = 1-p)
