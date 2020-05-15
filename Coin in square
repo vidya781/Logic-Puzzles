@@ -1,0 +1,33 @@
+Adapted from Mosteller 
+
+In a common carnival game a player tosses a penny from a distance of about 5 feet onto the surface of a table ruled in 1-inch
+squares. If the penny ( 3/4 inch in diameter) falls entirely inside a square, the player receives 5 cents but does not get his
+penny back; otherwise he loses his penny. If the penny lands on the table, what is the probability that he will win?
+
+Solution
+
+We need consider only the cases when the coin stays on the table, cause if it falls from the table and lands on the ground, 
+obviously the probability is zero.
+
+Clearly , it seems to be a case of geometrical probability where probability is directly related to areas. So an analysis of 
+what areas constitute the probability use cases. Mandatory condition is that the coin must land entirely inside the square.
+This means that the arc of the circle ( coin ) cannot intersect the side of any individual square. For now, the focus is only
+a single square region and a single circle (coin) with possibilities of intersection, touching and containment of the circle
+within the square.
+
+Of course some positions for the center of the coin are more likely than the others, but over a small square, one can regard the 
+probability distribution as uniform. What this means is that the probability that the center falls into any region of a square 
+is proportional to the area of the region, indeed, is the area of the region divided by the area of the square. 
+
+Picture this: The coin and the square in perfect symnmetry. The centres of both these figures coincide. Let O be the centre.
+Let AB be the horizontal axis and let A'B' be the vertical axis passing through O in the centre. This is a clear win. 
+
+The region segment towards the left of the coin = the region segment towards the right side of the coin = 1/2 - 3/8 = 1/8
+
+Combine these two extreme segments into one = 1/8 + 1/8 = 1/4 , and consider a square of side 1/4. This is one fourth of the
+original square . If the player is to win, the center must not land within 3/8 inch of any edge. We can imagine a small square
+enclosing the centre O whose side is s = 1/4 and the area is s^2 = 1/16 The centre O is at liberty to move around in this 
+region if the player is to win. 
+
+The probability of winning can be reduced if the lines of the square are thickened. If the lines are 1/16 inch wide, the winning
+central area reduces the probability to (3/16)^2 = 9/256
