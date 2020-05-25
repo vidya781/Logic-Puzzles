@@ -6,8 +6,8 @@ dice repeatedly until he either wins by throwing his point again or loses by thr
 
 Solution:
 
-We first get the probabilities for the totals on the two dice. Color the two dice and treat them as distinguishable for the purpose
-of the problem say red and blue. Sample space then becomes 6 X 6 = 36 all of which are equally likely.
+We first get the probabilities for the totals on the two dice. Color the two dice and treat them as distinguishable for 
+the purpose of the problem say red and blue. Sample space then becomes 6 X 6 = 36 all of which are equally likely.
 
 When it comes to the totals, we ask : How do we get a two, how do we get a three,etc?
 
