@@ -1,0 +1,64 @@
+The game of dice is to be played with 2 dice and the rules are thus :
+
+Only the totals for the two dice count. The player throws the dice and wins at once if the total for the first throw is 7 or 11. 
+Loses at once if it is 2, 3 or 12. Any other throw is called the "point". If the first throw is a point, the player throws the
+dice repeatedly until he either wins by throwing his point again or loses by throwing 7. What is the player's chance to win ?
+
+Solution:
+
+We first get the probabilities for the totals on the two dice. Color the two dice and treat them as distinguishable for the purpose
+of the problem say red and blue. Sample space then becomes 6 X 6 = 36 all of which are equally likely.
+
+When it comes to the totals, we ask : How do we get a two, how do we get a three,etc?
+
+Total :               2.     3.     4.     5.      6.      7.    8.      9.     10.     11.     12.  
+P(Total).           1/36.  2/36.   3/36.  4/36.   5/36.  6/36.  5/36.  4/36.    3/36.   2/36.   1/36
+
+   We can furthermore write out a table :
+   
+                                Throw of green die
+   Throw of blue.       1.    2.    3     4.    5.   6
+                   1.   2.    3.    4.    5.    6.   7
+                   
+                   2.   3.    4.    5.    6.    7.   8
+                   
+                   3.   4.    5.    6.    7.    8.   9
+                   
+                   4.   5.    6.    7.    8.    9.    10
+                   
+                   5.   6.    7.    8.    9.    10.   11
+                   
+                   6.   7.    8     9.    10.   11.   12
+                   
+  Probability of win on the first throw by getting 7 or 11 = P(7) + P(11) = 6/36 + 2/36 = 8/36
+  
+  Probability of loss on the first throw = P(2) + P(3) + P(12) = 1/36 + 2/36 + 1/36 = 4/36
+  
+  For later throws we need the probability of the 'point'.
+  Point candidates are { 4,5,6,8, 9,10}
+  In this situation we need to consider the joint probability of a throw candidate and 7 
+  For example , for 4 as the point , there are are 3 ways to make the point and 6 ways to make a 7 so that the 
+  probability now is 3/(3 + 6) = 3/9
+  Similarly the conditional probability of the other candidates in a similar manner:
+  
+  4 :   3/(3 + 6) = 3/9
+  5:    4/(4 + 6) = 4/10
+  6:    5/(5 + 6) = 5/11
+  8:    5/(5 + 6) = 5/11
+  9:    4/(4 + 6) = 4/10
+  10:   3/(3 + 6) = 3/9
+  
+  The probability of winning from a candidate point of view must be a weighted one. 
+  
+  From the table, we see that probability of getting 4 = 3/36 and this must be multiplied by the conditional probability
+  which is 3/9 = 3/36 X 3/9
+  Similarly for other candidates , we have for 5: 4/36 X 4/10
+  For 6: 5/36 X 5/11
+  For 8 : 5/36 X 5/11
+  For 9 : 4/36 X 4/10
+  For 10: 3/36 X 3/9 
+  Adding all this up, we get 0.27071
+  
+  To this we add the probability of winning on the first throw 8/36 + 0.27071 = 0.49293 approximately 0.5
+  
+  
