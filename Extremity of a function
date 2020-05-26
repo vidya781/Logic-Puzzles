@@ -1,0 +1,25 @@
+This problem appeared in an Australian Math Contest
+
+No matter what n real numbers x1,x2,…..xn may be selected in the closed unit interval [0,1], prove that there always 
+exists a real number x in the interval such that the average unsigned distance to the xi is exactly ½
+
+1/n ∑_(i=1)^n▒〖|x-x_(i ) 〗|= 1/2
+
+Solution :
+
+Let us say f(x) = 1/n ∑_(i=1)^n▒〖|x-x_(i ) 〗|
+
+Testing the function at the extremities, we see that at x = 0 we have
+
+f(0) = 1/n ∑_(i=1)^n▒〖|-x_(i ) 〗| = 1/n ∑_(i=1)^n▒x_(i )    ( as x_i >= 0)
+
+At x = 1
+
+f(1) = 1/n ∑_(i=1)^n▒〖|1-x_(i ) 〗| = 1/n ∑_(i=1)^n▒〖(x-x_(i ) 〗) ( since x_i ∈[0,1]) = 1/n( n- ∑_(i=1)^n▒x_i ) = 1 – f(0)
+
+And we have the relation f(0) + f(1) = 1
+
+In view of this, the two values f(0) and f(1) are either each equal to 1/2, providing two solutions to the problem, 
+in other words their values straddle 1/2 in which case the continuity of the function implies that f(x) = 1/2 
+for some x between 0 and 1
+
