@@ -1,0 +1,30 @@
+Each of the numbers x1,x2,...xn is either +1 or -1
+If S = x1x2x3x4 + x2x3x4x5 + x3x4x5x6 +.....xnx1x2x3 = 0
+Prove that n is a multiple of 4
+
+This problem is off Engl.
+
+Solution :
+
+Each xi is either 0 or -1, each term x(a) x(a+1)x(a+2)x(a+3) is also either +1 or -1
+Sum of n terms = 0 , => there must be some terms that are +1 and some terms which are -1 so that the resultant is 0
+We can say that (n/2) terms have sum 1, and (n/2) terms sum of -1
+
+Suppose that p of the x(i)'s are +1 
+Since each x(i) occurs in 4 of the terms x(a)x(a+1)x(a+2)x(a+3) there will be a total of 4p occurences of a factor x(i) = +1 
+throughout S
+Each term that is equal to +1 will contain even number of factors x(i) = +1 and each term which is -1 will contain an
+odd number of them.
+
+4p = ( Sum of n/2 even integers)+ (sum of n/2 odd integers)
+Since any sum of even integers is even, and the total of 4p is even, it follows that sum of n/2 odd integers is even.
+But sum of a collection of odd integers is even only when there ois an even number of them.
+Hence (n/2) must be even making n to be a multiple of 4.
+
+
+
+
+
+
+
+
