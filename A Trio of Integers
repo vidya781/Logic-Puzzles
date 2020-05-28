@@ -1,0 +1,42 @@
+This problem appeared in a Russian Math Contest
+
+Consider the trio of integers (2,5,13) and note that 2(5)-1 = 9, 2(13)-1 = 25 and 5(13)-1 = 64
+This is never the case when a new positive integer d is appended to the trio. In other words {2,5,13,d} will fail to be 
+a square for every integer d ( > 0).
+
+Solution:
+---------
+
+ab-1 is a perfect square for all 3 choices of a and b from the original trio {2,5,13} we need only show that for every 
+integer d, one of x = 2d-1, y = 5d-1, z = 13d-1 will fail to be a perfect square.
+
+Reside class of d modulo 4
+
+Note that in modulo 4, a square is always congruent to 0 or 1
+(2a)^2 = 4a^2
+(2a + 1)^2 = 4(a^2 + a) + 1 and sum of 2 squares a^2 + b^2 is never congruent to 3 ( mod 4)
+
+What are all the possible values that d could take ?
+
+1] d congruent to 0 or 2, in this case, x = 2d-1 congruent to 3 and hence not a square
+2] d congruent 3 , y = 5d - 1 congruent to 2 and not a square
+3] d congruent 1 , d = 4k + 1 for k >= 0, x = 2(4k+1) - 1 = 8k + 1
+y = 5(4k+1) -1 = 20k + 4 = 4(5k+1), z = 52k + 12 = 4(13k + 3)
+Suppose all three of x,y and z are perfect squares, y = 4(5k+1) is a perfect square, then as 4 is a perfect square, 5k + 1
+must also be a perfect square.
+
+Similarly, for the factor 13k + 3 of z, each of 8k + 1, 5k + 1, 13k + 3 must be a perfect square
+
+Let 8k + 1 = a^2, 5k + 1 = b^2 , 13k + 3 = c^2
+a^2 + b^2 = c^2-1
+As noted above, c^2 congruent to 0 or 1 ( mod 4)
+a^2 + b^2 = c^2 - 1 congruent to 3 or 0 ( mod 4)
+But a ^2 + b^2 can never be congrunet to 3 ( mod 4) ,a^2 + b^2 congruent to 0 (mod 4)
+
+Since each of a^2 + b^2 is congruent to 0 or 1 ( mod 4) result can be achieved if a^2 congruent 0 and b^2 also congruent to 0
+in mod 4
+=> a^2 must be an even number 
+However this is not so clearly, as a^2 = 8k + 1
+Hence the assertion.
+
+
