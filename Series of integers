@@ -1,0 +1,19 @@
+This problem is off Erdos to Kiev.
+
+Let a1 < a2 < a3 < ...... < a43 < a44 be positive integers not exceeding 125. Prove that among the 43 consecutive differences
+d(i) = a(i+1)-a(i), some value must occur at least 10 times.
+
+Solution :
+
+Beginning with a1, any of the a(i) can be obtained by adding the differences d1,d2....d(i-1):
+
+a(i) = a1 + d1 + d2 +.... + d(i-1)
+
+Hence a(44) = a1 + d1 + d2 +......d43
+
+As all the a's there are all different, each d(i) >= 1. Now if no value were to occur as often as 10 times among the d(i) 
+then, in particular, d(i) = 1 could not occur more than 9 times, nor could d(i) = 2 or 3 or 4. Thus the smallest d(i) must
+amount to atleast 9(1 + 2 + 3 + 4) = 90. The remaining seven d(i) must each be atleast 5, and we have that
+a(44) >= a1 + 9(1 + 2 + 3 + 4) + 7(5) = a1 + 125 > 125
+
+Thus a(44) exceeds its limit of 125 unless some d(i) occurs at least 10 times.
