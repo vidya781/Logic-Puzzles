@@ -1,0 +1,16 @@
+Two circles are internally tangent at point T. A chord AB of the outer circle touches the inner circle at the point P.
+Prove that TP always bisects < ATB.
+
+Solution:
+
+Let AB extended meet the common tangent at Q and let the angles <ATP = x, <PTB = y, <BTQ = z
+
+Now as always, it is instructive to tackle geometric problems with a neat diagram.
+
+QT and QP are equal tangents to the inner circle making triangle TQP isosceles and w = y + z
+With regard to the outer circle, TQ is a tangent and TB is a chord; thus the angle z between then is equal to the angle in the
+segment on the other side of the chord, that is 
+z = < A
+Now, exterior angle w of T(APT) = sum of the interior remote angles and so w = x + < A = x + z
+Hence w = y + z = x + x, giving y = x and hence TP always bisects <ATB
+
