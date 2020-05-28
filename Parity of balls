@@ -1,0 +1,35 @@
+1983 Australian Olympiad.
+
+In a large urn there are 75 white balls and 150 black ones and beside the urn is a big pile of black balls. The following
+two step operation is performed repeatedly. Firstly two balls are withdrawn at random from the urn and then:
+
+a] If they are both black, one of them is put back and the other is thrown away
+b] If one is black and the other white, the white one is put back and the black one is thrown away
+c] If they are both white, they are both thrown away and a black ball from the pile is put into the urn
+
+Therefore whatever the case, at each stage two balls are removed from the urn and only one is put back thur reducing the 
+number of balls in the urn by one. Eventually the urn will reach the point of containing just a single ball. The question is
+" What color is this last ball? "
+
+Solution:
+
+Randomly mix up the operations and see what teh result is for the first few moves:
+                B.   W.   B.   W.   B.   W.  B.    W.   B.   W.   B.   W
+a a b b c c ---149 + 75, 148 + 75, 147 + 75, 146 + 75, 147 + 73, 148 + 71
+
+a b b a c a ---149 + 75, 148 + 75, 147 + 75, 146 + 75, 147 + 73, 146 + 73
+
+c c b a c b --- 151 + 73, 152 + 71, 151 + 71, 150 + 71, 151 + 69, 150 + 69
+
+These are a series of 6 operations that we did on the balls in the urn.
+What pattern do we see?
+Note that the number of white balls is always odd, whereas the number of black balls fluctuates between odd and even 
+depending on the operation defined.
+We cannot say anything concrete about the number of black balls as the number of balls steadily decreases. There might be some
+white balls around when the number of black balls decreases to one, but the number of white balls provide a valuable insight.
+
+Parity of the white balls is always the same no matter the operation. One starts with an odd number of white balls , namely 
+75 and it must remain odd all throughout.. this means that the urn will always contain one white ball all throughout.Therefore
+the last ball will always be white since in every move we take 2 balls. Au contraire, if the number of white balls at the very
+beginning had been even, it would be impossible to wind up with a single white ball ( an odd number ) implying that the last 
+ball would be black.
