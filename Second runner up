@@ -1,0 +1,29 @@
+This is from Mosteller
+
+A tennis tournament has 8 players. The number a player draws from a hat decides his first round rung in the tournament ladder.
+Suppose that the best player always defeats the next best and that the latter defeats all the rest.The loser of the finals get
+the runner up. What is the chance that the second best player wins the runner up cup?
+
+Solution :
+
+--------\                     The second best player can only get the runner cup if he is in the half of the ladder not
+         \--------------
+         /               \.   occupied by the best player. Tournament of 2^n players, there are 2^(n-1) rungs in the half
+--------/                 \              ( top or bottom) not occupied by the best player and 2^n - 1 rungs in the whole ladder
+                         /  ----------    not occupied by the best player. Therefore in a tournament of 2^n players, the second
+--------\.              /              \
+         \--------------                \    best player has the probability of 2^(n-1)/(2^n - 1) of winning the runner cup
+         /                               \
+--------/                                 \
+                                         /------------------ winner 
+--------\                               /              
+         \--------------               /
+         /              \             /
+--------/                \           /
+                         /------------
+--------\               /
+         \--------------
+         /
+--------/
+        
+
