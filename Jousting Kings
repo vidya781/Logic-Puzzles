@@ -1,0 +1,13 @@
+From Mosteller
+
+There is a jousting tournament where the jousts are in pairs just like the tennis tournament. The 8 kings who will joust 
+are evenly matched and they include the twin kings Balin and Balon.What is the chance that they will meet in the tornament?
+
+Solution:
+
+Designate the twins as A and B. Put A in the top bracket ( first line of the ladder ) 
+Then B is in the same bracket (pair of lines), or in the next bracket or bottom half
+Chance that B is adjacent to A is 1/7 and the chance that they meet is 1
+The chance that B is in the next pair from A is 2/7 and chance that they meet is 1/4 because to meet each must 
+win his first match. Finally the chance that B is in the bottom half is 4/7 and the chance to meet is 1/2^4 = 1/16 
+as both must win 2 matches.Thus the total probability of meeting is (1/7).1 + (2/7).(1/4) + (4/7).(1/16) = 1/4
