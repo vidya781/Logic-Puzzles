@@ -1,0 +1,40 @@
+Three prisoners A,B and C with apparently equally good records have applied for parole.The parole board has decided to 
+release two of the three, and the prisoners know this but not which two. A warder friend of prisoner A knows who are to 
+be released. Prisoner A realizes that it would be unethical to ask the warder if he, A, is to be released, but thinks of 
+asking for the name of one prisoner other than himself who is to be released.He thinks that before he asks, his chances of 
+release are 2/3. He thinks that if the warder says "B will be released", his own chances have now gone down to 1/2, because 
+either A and B, or B and C are to be released. And so A decides not to reduce his chances by asking. However A is mistaken
+in his calculations.Explain.
+
+Solution:
+
+A is mistaken in that he has not listed out the events properly. That is, the correct sample space is lacking.
+
+Possibilities of release:
+
+1) A B
+2) A C
+3) B C
+
+Let us consider sequentially: P(Ar) = 2/3 and P(Br) = 1/2 after A has got released. C in prison
+Therefore P(Ar)P(Br) = P(E1) = 1/3 that AB are out of prison
+
+Similarly P(E2) = 1/3 that AC are out of prison 
+
+This is mainly because of the fact that A feels that he will surely be released and hence P(Ar) in both cases = 2/3
+
+But consider B , P(Br) = 1/3 and P(Cr) = 1/2, P(E3) = P(Br)P(Cr) = 1/6
+
+A conducts a thought experiment in which he feels that the warder might say B
+Now we consider some possibilities :
+
+1]A and B released and warder says B, probability = 1/3
+2] A and C released and warder says C, probability = 1/3
+3] B and C released and warder says B, probability = 1/6
+4] B and C released and warder says C, probability = 1/6
+
+If, in response to A's question , warder says "B will be released",then the probability for A's release is probability from 1]
+divided by sum of probabilities from 1] and 3] ( which in both cases B is released)
+Thus the probability of A's release is 1/3/(1/3 + 1/6) = 2/3
+Thus because of the warder's response, his probability of being released will not be lessened
+
