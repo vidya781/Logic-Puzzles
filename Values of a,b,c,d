@@ -1,0 +1,37 @@
+This is from Andy Liu's Problem book on Hunagarian Math Competition problems
+
+a^2 + b^2 = c^2 + d^2 = 1
+ac + bd = 0
+ab + cd = ?
+
+Solution :
+
+(a+c)(a-c) = (d+b)(d-b)
+=> a+c = d+b
+   a-c = d-b.  We call this case 1
+   
+   or a+c = d-b
+      a-c = d+b We call this case 2
+      
+  Therefore 2a = 2d
+  => a = d    
+  => c = b
+
+if a = d, c^2-b^2 = 0, => c = b
+ac + bd = 0
+db + bd = 0, 2bd = 0, either b or d = 0 let b = 0
+
+if b = 0, c = 0, in such a case a = +/- 1
+Therefor ab + cd = (+/- 1)(0) + 0(+/-1) = 0
+
+Case 2 : In this case, 2a = 2d, 2c = -2d, c = -b
+
+If c = -b, a^2 + (-c)^2 = 1, a^2 + c^2 = 1, c^2 + d^2 = 1, Therefore in this case a^2 = d^2, a = +/- d
+
+ac + bd = 0
+(+/-d)(-b) + bd = 0
+bd - b(+/-d) = 0
+=> bd - bd = 0 in case of +d
+=> bd -b(-d) = 0, => 2bd = 0 in which case it reduces to case 1
+
+Therefore in both cases, we have that ab + cd = 0
