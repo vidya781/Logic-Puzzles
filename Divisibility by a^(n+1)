@@ -1,0 +1,28 @@
+From Hungarian Problem Book III (Andy Liu's works)
+
+Let a,b and n be positive integers such that b is divisible by a^n. Prove that (a+1)^b - 1 is divisible by a^(n+1)
+
+Solution :
+---------
+
+b = ka^n for k in Z+
+
+(1+a)^b = C0 + C1(a) + C2(a^2) + ... + Cb(a)^b
+=> (1+a)^b-1 = (C0 + C1a + C2a^2+....+Cb(a)^b)-1
+
+Dividing both sides by a^(n+1) we get:
+ (1+a)^b-1/a.a^n = (C1a + C2a^2+.....+Cb(a)^b)/a^n.a
+                 = (C1 + C2a +....+Cba^(b-1))/a^n
+                 = bC1 + bC2 +...+bCba^(b-1)/a^n
+                 = k[bC1 + bC2a+....+a^(b-1)]/b = an integer as k is an integer
+                 
+  Lemma:
+  
+  b/k = a^n
+  (b/k)^1/n = a
+  a = (b/k)^(1/n)
+  a^(b-1) = [(b/k)^1/n]^(b-1) = b^((b-1)/n)/k^(b-1)/n 
+  a^(b-1)/b = [b^(b-1)/n]/k^(b-1)/n . 1/b = b^[b-(1+n)]/n
+                                           --------------  (proof of why the term in the bracket above is also an integer)
+                                            k^(b-1)/n
+    
