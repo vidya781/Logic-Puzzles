@@ -36,9 +36,11 @@ Now there are some possibilities:
  4 + 10 * 6 = 64 The answer yields readily
  So we can conclude that R = 4, O = 10 and M = 6
  
- The trick in these alphametics questions is to quickly spot possibilities and eliminate absurd possibilities by mental inspection.
- In this case we could also have proceeded to factoring 240 on but that would have been a slighty cumberson approach as we would have to deal
- with possibilities for 3 numbers instead of two as in RO which places a restriction on the allowed values that R and O could take.
+ The trick in these alphametics questions is to quickly spot possibilities and eliminate absurd possibilities by mental 
+ inspection.
+ In this case we could also have proceeded to factoring 240 on but that would have been a slighty cumberson approach as 
+ we would have to deal with possibilities for 3 numbers instead of two as in RO which places a restriction on the allowed 
+ values that R and O could take.
  Hence the quadratic approach was quicker in my opinion.
  
  These alphametics type problems are also used in Cryptography to code and decode messages.
