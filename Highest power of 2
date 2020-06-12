@@ -1,0 +1,30 @@
+Determine the highest power of 2 dividing 2^n!
+
+From Hungarian Contest Problems III ( Andy Liu)
+
+Solution
+--------
+
+Note that 2^1 ! = 2, 2^2 != 24, 2^3! = 40320
+        
+Conjecture that 2^n - 1 is the highest power
+
+Using induction : for n >= 3, highest power of 2 that divides 2^n! is 2^n - 1
+Highest power of 2 that divides (2^n-1)! is 2^n - 1 - n
+Consider 2^(n+1) !
+
+Line the 2^(n+1) factors in the two rows as follows:
+
+1.        2.        3     .... |.  2^n
+-------------------------------
+2^n+1    2^n + 2   2^n + 3 .....| 2^(n+1)
+
+By induction hypotheses, the highest power of 2 that divides the product of numbers in the 
+first row is 2^n - 1 by induction hypotheses
+For 1<=k < 2^n, a power of 2 divides k iff it divides 2^n + k . This follows from the distributivity theorem since
+such a power of 2 must divide 2^n
+
+In each column except the last, the highest power of 2 that divides the number in the first row is the same as that 
+dividing the number in the second row. In the last column, the highest power of 2 dividing the number in the first row
+is 1 less than that dividing the number in the second row. 
+Hence the highest power of 2 that divides 2^(n+1)! is 2(2^n-1) + 1 = 2^(n+1) - 1 
