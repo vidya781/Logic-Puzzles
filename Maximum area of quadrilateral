@@ -1,0 +1,33 @@
+Let ABCD be a quadrialteral inscribed in a circle. Suppose AB = √(2+√2) and AB subtends 135 at the centre of the circle.
+Find the maximum possible area of ABCD.
+
+This problem appeared in INMO 2012
+
+Solution:
+
+We consider two approaches to this problem 
+
+Let O be the centre of the circle in which ABCD is inscribed and let R be its radius.
+Using the cosine rule and referring to the diagram ,
+cos 135 = [OA^2 + OB^2 - AB^2]/2(OA)(OB) , now OA = OB = R
+2R^2 cos(90 + 45) = 2R^2 -(2 + √2)
+Simplifying, we see that R = 1
+Now for [ADC] to be maximum ( as it is one of the triangles constituting the quadrilateral)
+It is clear that D should be the mid point of AC so that distance from AC is maximum
+Hence AD = AC for [ABCD] to be maximum
+A(T(ABC)) = 0.5 (AC) height and if AC = AD max. area is reached
+Therefore A(T(ABC)) = 0.5(AC)^2 
+Similarly, [ABCD] = [ABC] + [ABC]
+BC = CD
+Thus BC = CD = DA which fixes the quadrilateral and this configuration would ensure the maximum area is reached 
+So BC, CD and DA subtend equal angles at Centre O
+< BOC = α, < COD = β , < DOA = 𝛾
+[ABCD] = [AOB] + [BOC] + [COD] + [AOD] = 0.5 sin(135) + 0.5[ sin(α) + sin(β) + sin(𝛾)]
+Now [ABCD] is max if all three angles are < 180 and α = β = 𝛾 = (360-135)/3 = 75
+[ABCD] = 0.5 sin 135 + (3/2)sin75 = 0.5(1/√2 + 3(√3 + 1)/2√2 )= (5 + 3√3)/4√2
+Aliter: Use Jensens inequality :
+We know that all three angles are < 180, Since sin(x) is concave on (0,Pi) Jensens inequality gives us :
+sin( α) + sin(β ) + sin(𝛾)
+--------------------------   <= sin((α +  β + 𝛾 )/3) = sin75
+          3
+Hence [ABCD] <=  1/2√2. + 3/2 sin(75) = (5 + 3√3)/4√2 with equality iff α = β = 𝛾 = 75
