@@ -5,8 +5,8 @@ The perimeter of a triangle is 7. The sides are integers. What could be the maxi
 Solution:
 
 The first thing to note here that the perimeter is 7 ,ie if the sides are a, b and c then a + b + c = 7.
-We know that area is maximum when the triangle is equilateral: all sides equal but no integer combination yields a sum of 7. One of the
-sides has to have odd lengths.
+We know that area is maximum when the triangle is equilateral: all sides equal but no integer combination yields a sum of 7. 
+One of the sides has to have odd lengths.
 
 3,3,1 
 1,1,5 ( all odd sides but triangle inequality does not hold)
