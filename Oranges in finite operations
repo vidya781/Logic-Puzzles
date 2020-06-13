@@ -1,0 +1,23 @@
+Appeared in INMO 2018
+
+There are n>= 3 girls in a class sitting around a circular table each having some oranges with her. Every time, the teacher
+notices a girl having more oranges than both of her neighbours combined, the teacher takes away one orange from that girl and
+gives one orange each to her neighbours. Prove that this process stops after a finite number of steps( Assume that the 
+teacher has an abundant supply of oranges)
+
+Solution:
+
+Let p(i) be the number of oranges with the i th girl
+Consider a seating arrangement in the clockwise direction with 0 th girl, 1st girl ,   ith girl , till the n th gile
+finally the 0th girl again.
+
+S = a finite number = |p0-p1| + |p1-p2| +.....+ |pn-p0|
+If i th girl 's oranges are changed by this operation, we
+have : | p(i-2)-p(i-1)| can change by +/- 1
+       | p(i+1)-p(i+2)| can change by +/- 1
+       | p(i-1)-p(i)| and |p(i)-p(i+1)| both decreases by 2
+       ( proved by actually plugging in numbers)
+       as p(i) > p(i-1) and p(i+1)
+       So, S decreases with every operation
+But S>= 0 => process will end in a finite number of steps
+
