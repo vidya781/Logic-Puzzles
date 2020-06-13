@@ -1,0 +1,29 @@
+Appeared in INMO 2018
+
+Let N denote the set of all natural numbers and let f:N->N be a function such that 
+a) f(mn) = f(m)f(n) for all m,n in N
+b) m + n divides f(m) + f(n) for all m,n in N
+Prove that there exists an odd natural number k such that f(n) = n^k for all n in N
+
+Solution:
+------
+
+f(n) = n^k
+f(mn) = f(mn)^k = m^kn^k
+Also, f(m) + f(n) = m^k + n^k
+As m^k + n^k = (m+n)(m^(k-1) - m^(k-2)n + m^(k-3)n^2-....+ n^(k-1); k is an odd integer so that the last term is raised to 
+an even  power
+ = (m+n)m^(k-1)[ 1-(-n/m)^k ]
+                 ----------
+                [ 1-(-n/m)]
+                
+  = (m+n)m^(k-1)[ m^k + n^k ]
+                  ---------
+                   [  m^k ]
+                 -----------
+                  (m + n)
+                  ------
+                     m
+   = m^k + n^k 
+   
+   Hence the assertion
