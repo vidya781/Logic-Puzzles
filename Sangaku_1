@@ -1,0 +1,55 @@
+This post will include 2 beautiful geometry problems that belong to the category of problems called as Temple Geometry dating to the Japanese cultures in the 18th and
+19th centuries.
+
+1] Miyagai Prefecture 1892
+
+ A circle with centre O1 and radius r1 touches another circle, centre O2 and radius r2 externally.The two circles touch the line l at points A and B respectively.
+ Show that AB^2 = 4r1r2
+ 
+ Proof:
+ 
+ As usual a neat geometric figure greatly simplifies our understanding of the problem
+ 
+ Let P be the point of contact between the circles O1 and O2
+ Therefore we must have O1-P-O2
+ PO2 = r2
+ PO1 = r1
+ Now O1 O2 = O1P + PO2 = r1 + r2
+ Draw O2M || to AB
+ MABO2 forms a rectangle with l(MO2) = l(AB)
+ O1M = O1A - MA = O1A - O2B (As MA = O2B)
+ O1M = r1 - r2 ( As r1 > r2 )
+ By Pythagoras Theorem on AO1MO2,
+ (O1O2)^2 = (MO2)^2 + (O1M)^2
+ (r1 + r2)^2 = (r1 - r2)^2 + (AB)^2
+ => (AB)^2 = 4 r1r2 ( as desired)
+ 
+ 2] Gumma Prefecture 1824
+ 
+ A circle with centre O3 touches the line l and the two tangent circles with centre O1, radius r1, and centre O2, radius r2
+ 
+ Show that 1/sqrt(r3) = 1/sqrt(r1) + 1/sqrt(r2)
+ 
+ Embed a circle O3 in the above figure with radius r3 so that it is sandwiched between these two bigger circles ( WLOG, r1 > r2 > r3)
+ 
+ draw || lines O1A and O2B
+ Let P be the point of contact of middle circle with line l
+ 
+ M-O3-L || A-P_B
+ ML = AB and MO3 = AP and O3L = PB
+ O1O3 = r1 + r3
+ O1M = O1A - MA = O1A - O3P = r1 - r3
+ In Right Triangle O1MO3, (O1O3)^2 = (MO3)^2 + (O1M)^2
+ (r1 + r2)^2 = (MO3)^2 + (r1-r3)^2
+ (MO3)^2 = 4 r1 r3
+ Similarly, (LO3)^2 = 4 r2 r3
+ MO3 + LO3 = AP + PB = AB = 2 sqrt(r3)(sqrt(r1) + sqrt(r2))
+ From the previous problem AB^2 = 4r1r2
+ => AB = 2 sqrt(r1r2)
+ => 2sqrt(r1r2) = 2sqrt(r3)[ sqrt(r1) + sqrt(r2)]
+ Dividing throughout by sqrt(r1), sqrt(r2),sqrt(r3),
+ we have 1/sqrt(r3) = 1/sqrt(r2) + 1/sqrt(r1)
+ 
+ 
+ 
+ 
