@@ -1,0 +1,70 @@
+Aichi Prefecture 1877
+
+ABCD is a square of side a, and M is the centre of a circle with diameter AB; CA and DB are arcs of circles of radius a and centres D and C respectively.
+Find the radius r1, of the circle, centre O, inscribed in the area common to these circles. Find also the radius r2 of the circle, centre O' which touches 
+CA and DB externally.
+
+Solution:
+
+As a first step draw a neat diagram to illustrate the points
+
+AB = a, OP1 = r1, O'Q = r2
+Now in the same diagram draw OP which represents the radius r1 caused by the DB and extend it all the way to c so 
+we have P-O-C
+Now through O draw a line || to AD ( or BC) so as to get M-O-N
+N lies on DC
+Since the centres of the two circles lie on one line itself, N-O-O'-M
+From the centre O] mark a point Q on the circle which has radius r2 and Q lies on arc BD as well.
+Extend Q all the way to C so that O'-O-C
+
+In T(ONC) which is right angled, ON^2 + NC^2 = OC^2
+Now AB = CD = a and ND = CN = a/2 as N is the midpoint of CD
+If a semicircle were drawn with CD as diameter it wouch touch the other semicircle already present
+Therefore if the contact point were to be marked as L , we have N-L-O
+But NL = CN = DN = a/2
+Therefore NO = NL + LO = a/2 + r1
+Applying Pythagoras theorem to T(ONC), we have
+(a/2 + r1) ^2 + (a/2)^2 = (a-r1)^2. ( As ON^2 + NC^2 = OC^2)
+( CP = a = radius CD of the larger circle  and CP = CO + OP as C-O-P, CO = a-r1)
+=> a^2/4 + ar1 + r1^2 + a^2/4 = a^2-2ar1 + r1^2
+=> 3ar1 = a^2/2
+=> r1 = a/6
+
+Now in T(O'NC),
+O'N^2 + NC^2 = O'C^2
+NM = a 
+O'N = NM - O'M = a - r2
+and O'C = CQ + O'Q = a + r2
+Applying Pythagoras theorem to T(O'NC)
+O'N^2 + NC^2 = O'C^2 
+=> (a-r2)^2 + (a/2)^2 = (a + r2)^2
+=> a^2 - 2ar2 + r2^2 + a^2/4 = a^2 + 2ar2 + r2^2
+=> 4ar2 = a^2/4
+=> r2 = a/16
+
+Thus r1 = a/6 and r2 = a/16 with r1 > r2
+
+
+Fukusima Prefecture 1883
+
+ABCD is a rectangle with AB = sqrt(2) BC. Semicircles are drawn with AB and CD as the diameters.
+The circle that touches AB and CD passes through the intersection of these semicircles. Find the area S of each lune in terms of AB
+
+
+Now DG = GE = radius of semicircle, DG = GE = asqrt(2)/2
+Now EF subtends a right angle at G, < EGF = 90
+EG^2 + GF^2 = EF^2
+(a sqrt(2)/2)^2 + (a sqrt(2)/2)^2 = EF^2
+=> EF^2 = a^2 , EF = a
+To find the area of each lune,
+< EGH = 90 ( angle in semicircle)
+Area of segment EHF = Area of sector GEHF ( where H is the mid point on the arc of semicircle with CD as diameter) - Area T(EFG)
+       = Theta/2 (r)^2 - [ 1/2 X asqrt(2)/2 X asqrt(2)/2)] = Pi/4 (a sqrt(2)/2)^2 - a^2/4. ---- (1)
+       
+ Area of each lune (S) = Area of semicircle on EF - Area of segment EHF
+                       = 1/2 Pi ( a/2)^2 - [ Pi/4 (a sqrt(2)/2)^2 - a^2/4 ] = a^2/4 = AB^2/8  ( from (1) )
+                       
+ Joint area of the lunes = 2 ( AB ) ^2 / 8 = (AB) ^ 2/4.   
+ 
+ 
+ 
