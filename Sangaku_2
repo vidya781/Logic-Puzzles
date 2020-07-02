@@ -19,7 +19,7 @@ Extend Q all the way to C so that O'-O-C
 
 In T(ONC) which is right angled, ON^2 + NC^2 = OC^2
 Now AB = CD = a and ND = CN = a/2 as N is the midpoint of CD
-If a semicircle were drawn with CD as diameter it wouch touch the other semicircle already present
+If a semicircle were drawn with CD as diameter it would touch the other semicircle already present
 Therefore if the contact point were to be marked as L , we have N-L-O
 But NL = CN = DN = a/2
 Therefore NO = NL + LO = a/2 + r1
@@ -66,5 +66,6 @@ Area of segment EHF = Area of sector GEHF ( where H is the mid point on the arc 
                        
  Joint area of the lunes = 2 ( AB ) ^2 / 8 = (AB) ^ 2/4.   
  
- 
+ Note that the answer is independent of Pi.Hippocrates is also said to have investigated lunes and has shown that it was possible to square the
+ region between the two circles.
  
