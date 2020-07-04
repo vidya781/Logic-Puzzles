@@ -1,0 +1,92 @@
+We now look at some problems on Triangles and ellipses and one of the problems require a visualisation of a circle and an ellipse as the plane 
+sections of a cyclinder
+
+From an early 19th century book of problems on Temple Geometry we have :
+-----------------------------------------------------------------------
+
+ABC is a triangle with a right angle at C and C' is the point on AB such that BC' = BC . P is the point on BC such that the line C'P 
+divides the triangle into 2 parts of the same area. Show that 2PC' = AB
+
+As usual, it is advisable to draw a neat diagram to start working on the problem
+
+Solution:
+========
+
+Draw a perpendicular from  P to AB ( The hypotenuse) so that it meets AB at H.
+< PHB = < PHA = 90
+
+A(T BPC') = 1/2 (BC')(PH) But BC' = BC
+=> A(T (BPC')) = 1/2 (BC) (PH)
+Also A(T(ABC)) = 1/2 (BC) (AC)
+
+Now given, A(T(BPC')) = 1/2 A(T(ABC))
+1/2 (BC) (PH) = 1/2 [ 1/2 (BC) (AC) ]
+PH = 1/2 (AC)----(1)
+
+In T(PHB) and T(ABC), < B is common to both and < ACB = < PHB = 90
+Hence both these Triangles are similar
+
+We have the following relations:
+PH/HB = AC/CB----(2)
+
+=> BC = 2BH ( from (1) and (2) )
+PH = (1/2) AC
+also BH = 1/2 (BC) But BC = BC'
+Hence BH = (1/2) BC'
+T(BPC') is isosceles 
+=> PB = PC'
+But PB = (1/2) AB, PC' = (1/2) AB
+AB = 2 PC'
+
+Miyagi Prefecture 1877
+----------------------
+
+ABCD is a square of side a, and M is the midpoint of AB. AC meets MD at F.
+Find the radius of the incircle in T(DCF)
+
+The structure of the figure is as follows:
+
+A-B-C-D in counter clockwise orientation. AB ( side on top || CD on bottom)
+BC ( side on the extreme left || to AD on the right side)
+M divides AB , => MA = MB = a/2 and DN = NC = a/2 
+From C draw the diagonal CA to intersect T(MCD) at F
+Draw FN || AD, and draw the incircle of T(FCD)
+Let O be the centre of the circle , In T(MND) = MD^2 = MN^2 + ND^2 = a^2 + (a/2)^2, MD = a sqrt(5)/2
+
+Observe that T(MAF) ~ T(DCF)
+MA/DC = AF/CF = MF/DF
+=> MF = FD / 2
+
+Now FD = FD + FM = MD
+         FD + FD/2 = MD
+         FD = (2/3)MD = (2/3) [a sqrt(5)/2]= asqrt(5)/3
+CF = (2/3 )AC = (2/3) a sqrt(2) = (2 sqrt(2) a)/ 3
+
+Now A(T(DCF) = A(T(COD)) + A(T(FOD)) + A(T(FOC)) = r/2 [ CF + FD + CD ]
+              = r/2 [ 2 sqrt(2) a/3 + a sqrt(5)/3 + a ]
+              = ra/2 ([2 sqrt(2) + sqrt(5) + 3 ])/3
+              
+              
+But we also have A(T(DCF)) = 1/2 CD CF sin 45 = (1/2) a ( 2 sqrt(2)/3 ) a . 1/sqrt(2) = a^2/3
+
+a^2/3 = ra/2 ([2 sqrt(2) + sqrt(5) + 3 ])/3
+
+r = 2a / [ 2 sqrt(2) + sqrt(5) + 3 ] 
+
+
+Miyagi Prefecture 1822
+----------------------
+A, B and C are three points on an ellipse with centre O , semimajor axis a and semiminor axis b such that the areas
+S1, S2 and S3 of the curvilinear triangles are equal.
+Show that the area of T(ABC) = (3/ 4) sqrt(3) ab
+
+Take a slice off a cylinder ( 3d structure) to get a circle in 2 d structure T (A'B'C')
+
+Now Japanese Temple geometers were conversant in affine transformations  whereby an ellipse may be transformed into a circle.
+The ellipse in this example transforms to a circle with radius b by scaling the major axis with a factor of b/a
+The condition of equal areas for the curvinlinear triangles transforms into the condition that A'B'C' is equilateral
+
+A ( T(B'OC')) = (1/2) b^2 sin (120) = sqrt(3)/4 b^2
+A(T(A'B'C') = 3 sqrt(3)/4 b^2
+Hence by reverse affine transformation,
+A(T(ABC)) = a/b ( 3 sqrt(3) b^2/4) = 3 sqrt(3) ab/4
