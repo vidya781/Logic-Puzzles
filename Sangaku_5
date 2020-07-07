@@ -1,0 +1,53 @@
+Miyagi Prefecture 1877
+
+DPC is an equilateral Triangle within Square ABCD, and AP meets BC in Q. Show that we can find R on CD so that 
+AQR is equilateral. Let AR meet PD in S and QR meet PC in T.
+
+The incircle of T(ADS) has centre O1 and radius r1 and the incircle of T(CRT) has centre O2 and radius r2.Show that r2 = 2r1
+
+Solution :
+
+We will try and tackle the first part of the problem by means of Coordinate Geometry
+
+Let A be (0,0) and B (-a,0) C (-a,-a) and D (0,-a) 
+T(CPD) is equilateral. We know P lies in the 3rd Quadrant and let it have (xp,yp) as coordinates
+Setting up the equations, we have:
+(xp + a)^2 + (yp + a)^2 = a^2.  ---(1)
+xp^2 + (yp - a)^2 = a^2 -----(2)
+From this we get, xp^2 + yp^2 + 2a(xp + yp) = -a^2
+x^2 + y^2 -2ayp = 0
+=> xp + 2yp = -a/2
+
+PD^2 = xp^2 + (yp + a)^2
+PC^2 = (xp + a)^2 + (yp + a)^2
+CD^2 = a^2
+PD^2 = CD^2 and PC^2 = a^2 = CD^2
+xp^2 + yp^2 + 2ayp + a^2 = a^2
+=> xp^2 + yp^2 + 2ayp = 0. ------(3)
+PC^2 = xp^2 + 2axp + a^2 + yp^2 + 2ayp + a^2
+xp^2 + yp^2 + 2a(xp+yp) + 2a^2 = a^2
+xp^2 + yp^2 + 2a(xp + yp) = -a^2
+Using (3) we get, 2axp = -a^2
+=> xp = -a/2
+(-a/2)^2 + yp^2 + 2ayp = 0
+a^2/4 + yp^2 + 2ayp = 0
+yp^2 + 2ayp + a^2/4 = 0
+yp = [-2a +/- a sqrt(3)]/2
+Thus we find two possibilities for yp
+yp = -a +/- a sqrt(3)/2 
+yp = -1.866a and yp = -0.134a
+But P is within the square and so we go with yp = -0.134a
+P then is (-a/2, -0.134a)
+Now consider point Q (-a, yq)
+Slope AP = slope PQ
+and m(AP) = 0.268 using the coordinates
+m(PQ) = -0.268a
+=> Q (-a,-0.268a)
+We are to find R on DC such that AQ = QR = AD
+Since R lies on DC it must have same y coordinates as D , => R (xr,-a)
+AQ^2 = (-a-0)^2 + (-0.268a -0)^2 = a^2 + 0.0718a^2
+AQ^2 = 1.0718a^2
+AR^2 = (xr-0)^2 + (-a-0)^2
+=> xr^2 + a^2 = 1.0718a^2
+xr^2 = 0.0718a^2, => xr = 0.268a
+Thus R is (-0.268a,-a) as it falls in the third quadrant. This completes the first part of the problem.
