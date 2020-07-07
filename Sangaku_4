@@ -1,0 +1,63 @@
+Very often we when confronted with a problem, we wonder where to begin , what approach to take ? Its not terribly different from shooting darts in the 
+dark... and then one such dart has a light embedded in it.
+
+The following problem from the Gunma Prefecture 1877 illustrates the above philosophy.
+
+Imagine a semicircle and within that semicircle are embedded some additional circles and semicircles with configurations thus.
+2 smaller semicircles side by side such that they take up the entire diameter of the larger semicircle within which they lie.
+On each of these smaller semicircles, lies a smaller circle so that it touches the larger semicircle. So this smaller circle touches
+a smaller semicircle at one end while touching the largest enclosing semicircle. Now these 2 smaller circles enclose a larger circle
+which touches them at either extremetity. So we have the following scenario, 2 smaller circles ( each of radius r) touching a circle 
+O2 with radius R2 and touching a semicircle sitting on the base of the largest enclsoing semicircle. What is the radius of each circle?
+In other words, find R2, r and R ( the radius of the largest enclosing semicircle )
+
+Solution :
+--------
+
+A good place to start is trying to set up relations between r, R2 and R
+Let O be the centre of the largest semicircle and A and B be the extremities with A on the left and B on the right so that A-O-B
+Let M be the centre of the left semicircle so that A-M-O and N be the centre of the right semicircle so that O-N-B.
+Thus A-M-O-N-B
+Also let P be the point of contact between the semicircle on the left with the circle on the left above it so that M-P-O1 where O1 
+is the centre of the small circle ( radius r) 
+Similarly on the right we have N-Q-R3 ( also of radius r) where Q is the point of contact of the semicircle on the right with the
+circle on the right
+Since a circle of intermediate circle lies sandwiched in between O1 and O3 its radius is R2 > r ( for each of the smaller circles flanking it)
+So O1-O2-O3
+Now OM + ON = R/2 + R/2 = R, => MN = R
+Also O1O3 = r + 2R2 + r = MN as AB || O1O3
+2R2 + 2r = R, => R2 + r = R/2 ------(1)
+Thus we have derived one such relation connecting the 3 variables. How can we proceed further?
+We conjecture that the figure O1O3NM could be a square but it might as well be a rectangle. How might we confirm?
+The sides of this figure are :
+O1P + PM = r + (R/2)
+=> O1M = O3N = r + (R/2)----(2)
+If it is a square we must have: ON + NM = R/2 + R/2 = R
+MN = MO + ON = R
+Thus R = r + R/2 
+=> r = R/2
+But according to (1)
+R2 + R/2 = R/2
+=> R2 = 0 which is absurd
+Hence our conjecture that O1O3NM is a square is not true at all. Hence it must be a rectangle.
+
+=> R2 = R/2 - r and so for R2 > 0 r < R/2 necessarily
+We definitely need to derive more relations and so we note that L which is the point on the largest semicircle must be such that 
+AL and BL are perpendicular to each other.
+< ALB = 90 ( we also have O-O2_L due to the symmetry)
+Also < LOA = < LOB = 90
+Therefore (OA)^2 + (OL)^2 = (AL)^2 ( In T(AOL))
+=> AL^2 = 2 R^2
+This is the dart now.
+Join MO2 So T(O2OM) is a right Triangle and join N to O2. T(O2N) is a right Triangle.
+( R/2 + R2)^2 = (R/2)^2 + (O3N)^2
+( Applying Pythagoras theorem to O2OM, (O2M)^2 = (OM)^2 + (O3N)^2 )
+=> Expanding and simplifying we have : RR2 + R2^2 = R^2/4 + Rr + r^2 and using R2 = R/2 - r
+we further have R^2/2 = Rr + Rr + Rr, => r = R/6 -----(2)
+Now we see some clear relationships and back substituting in (1)
+R2 + R/6 = R/2
+R2 = R/2 (1-1/3) = R/3
+
+Thus we see a clear relationship for this configuration to hold good.
+Basically if R = 6 then r = 1 and R2 = 2
+Scale this up in any proportion and this must be the relation between R, r if this configuration is to hold good.
