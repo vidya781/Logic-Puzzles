@@ -51,3 +51,22 @@ AR^2 = (xr-0)^2 + (-a-0)^2
 => xr^2 + a^2 = 1.0718a^2
 xr^2 = 0.0718a^2, => xr = 0.268a
 Thus R is (-0.268a,-a) as it falls in the third quadrant. This completes the first part of the problem.
+
+We now tackle the second part of the problem.
+
+Draw a Perpendicular from O2 to CD let the point be M so that O2M Perp to CR. < O2 M C = < O2 M R = 90
+Similarly draw O1L Perp to AD
+< PCM = 60 = < TCM , also < O2CM = 30 as O2C is the angle bisector
+Let O2M = R
+By the symmetry, < BAP = < DAS = p ( say) 
+p + 60 + p = 90, p = 15
+Also < SDL = 30, O1D is the angle bisector of < SDL
+tan 15 = r / LD
+
+also tan 30 = R/CM ( In T(O2CM))
+
+To prove R/r = 2, we have (CM tan 30) / (LD tan 15) 
+tan 30 = 2 tan 15/(1-tan^2 15) 
+2 X (tan ^ 15) / ( 1 - tan^15) . CM/LD ( tan 15 ) = 2 . CM/LD . 1/(1-tan^15) 
+Not very difficult to prove by tigonometry that CM/LD = 1 - Tan^2 15
+Therefore R = 2r
