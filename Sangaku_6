@@ -1,0 +1,36 @@
+Think of a square enclosing a space and in that space is an inverted isosceles triangle which houses 2 equal circles so that they
+are adjacent to each other and touch the sides of the triangle.The apex of this inverted triangle further touches a circle which in turn is flanked by 
+2 circles of the same size. So basically three circles are of equal size ( Radii) and the central one touches the apex of the inverted triangle which
+houses two circles internally of some radii which may or may not be different from the outside 3 circles.
+
+Prove that all the circles have the same radii.
+
+This is from Rigby's book on Japanese Temple Geometry.
+
+Proof:
+
+Again, just the figures to start with really. Let A be the side of the square.
+
+Let M be the mid point of base AB which is also the base of the triangle ALB where L is the apex of the traingle which touches the central circle.
+Let N be the diametrically opposite point to L which touches CD. So M-L-N.
+
+We attempt a proof by contradiction. Let's suppose the 3 outside circles have radius R
+Therefore 6R = A , => R = A/6
+Let O1 and O2 be the centres of the 2 inner circles.
+Also ML + 2R = A,=> ML = A-2R
+A (T(ABL)) = (1/2) AB ML = (1/2) A (A-2R) = 1/2 A (A-2.A/6) = 1/2 A (2 A/3) = A^2/3
+A(T(MBL)) = A^2/6
+
+T(MBL) = 1/2 A(T(ABL))
+
+In right triangle MBL => (A/2)^2 + (ML) ^2 = (BL)^2
+=> A^2/4 + (A-2R)^2 = BL^2
+=> BL^2 = (5A^2-16AR + 16R^2)/4 and putting R = A/6 we get BL = 5A/6
+
+Perimeter of MBL  = A/2 + (A-2R) + BL = (A/2) + (A - A/3) + 5A/6 = 2A
+
+A(T(MBL)) = r s = r (MB + ML + BL) = r(A/2 + (A-2R) + 1/2 Sqrt ( 5A^2 - 16A.A/6 + 16.A^2/36) = r[ A/2 + 2A/3 + 5A/6] = 2A
+
+A^2/6 = r s , A^2/6 = r A
+r = A/6 = R
+Hence all the circles have the same radii for this configuration to hold good.
