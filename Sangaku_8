@@ -1,0 +1,88 @@
+
+Consider the following figure:
+
+https://www.cut-the-knot.org/pythagoras/PentagonSangaku1.gif
+
+One can also find some fantastic examples of Sangaku problems in Professsor Dan Pedoe's book that covers problems of this type.
+
+A1 A2 A3 A4 A5 is a regular pentagon of side a and referring to the figure above, six right congruent right angled triangles fan
+out along the sides of the pentagon.
+Find the length of the hypoteneuse, t, of these triangles.
+
+Miyagi Prefecture 1912
+
+In anticlockwise nomenclature A1 A2 A3 A4 A5 where A5 A4 = a
+M is the midpoint of A1 A5 , A3 M = h , and let A3 A5 = l
+A3 - A4 - P = and AP = c
+We make 2 simaltaneous observations:
+
+In T(A3 A4 A5)                                  In T(A3 P H)
+l = 2 a cos 36                                  cos 36 = c/t
+
+In T(A3 M A5),                                  => t = c/(cos 36)
+h = l sin 72                                    => t = ( 2a cos 36 sin 72)/(cos 54 cos 36)
+=> h = 2a cos 36 sin 72                         => t = (2a sin 72) / (cos 54)
+=> In T(A3 M P)                                 => t = (4asin36cos36)/(cos 54)
+ cos54 = h/c                                    => t = (4a cos 54 cos 36) / (cos 54)
+ => c = h/cos54                                 => t = 4a cos 36
+ => c = (2a cos 36 sin 72)/(cos 54)             => t = a(1 + sqrt(5)) since cos 36 = (1 + sqrt(5))/4
+ 
+ 
+ Consider the following :
+ 
+ http://jwilson.coe.uga.edu/emt725/PaperKnot/PaperKnot.html
+ 
+ Follow the link above to get an idea of the following Sangaku problem : ( From an early 19th century book of temple geometry problems)
+ 
+ Construct a regular pentagon by tying a knot in a strip of paper of width a. Calculate the side t of the pentagon in terms of a.
+ 
+ Fukagawa and Pedoe note that the method of construction is ' right over left and under '. Paper is then smoothed out and the pentagon appears.
+ 
+ So consider a naming convention and orientation as follows:
+ A B C D E for the pentagon vertices in anticlockwise orientation. Also B-G with G being the extremity on the left side of the paper.
+ G C = a 
+ B E and C D are the edges of the strip of paper, so that vertical line FC is width a
+ 
+ B F = s and B - F - H , BC = t
+ It seems that values of sin 18 and cos 18 were not known back then. 
+ 
+ Had it been known, the value of a = t cos 18 would have been calculated
+ Sincs < BCF = <CAM , BF : BC = CM : AC
+ t(t/2) = sp where BF = s and p = BE = 2s + t
+ that is t = (1 + sqrt(5)) s
+ From (BC)^2 = (BF)^2 + (FC)^2
+ t^2 = ( t/(1+sqrt(5))^2 + a^2
+ => t^2 = (t/(1+sqrt(5))^2 + a^2
+ => a^2 = ((5 + sqrt(5))/8) t^2
+ => a = sqrt(10 + sqrt(5)). (t/4)
+ => t = sqrt(2 - sqrt(4/5))a
+ 
+ In T(BCG) and T(CAM)
+ < BCG = < CAM , < BGC = < CMA = 90
+ Hence T( BCG ) ~ T( CAM )
+ BF/t = CM/CA = CM / BE = t / 2 BE
+ t^2 = 2BF BE = 2 BF ( BF + t )
+ Let BF = s where s = sqrt( t^2 - a^2 )
+ => t^2 = 2 s ( s + t )
+ => 4 s^2 - 2 s t - t^2 = 0
+ => s = ( 2t +/- sqrt( 4t^2 + 16 t^2))/8
+ => s =  t.[ ( 2 +/- 2 sqrt(5))]/ 8 
+ 
+ Taking the positive solution, s = t((1 + sqrt(5)/4 )
+ In T(BFC) FC^2 = BC^2 - BF^2
+ a^2 = t^2 - s^2
+ a^2 = t^2 - [ ( 1 + sqrt(5)/4)^2 t^2
+ a^2 = t^2 -  t^2.( 1 + sqrt(5))^2/4
+     = ( 1 - 6 + 2sqrt(5)/16) t^2 
+     = [ (10 - 2 sqrt(5))/16 ] t ^ 2
+ t^2 =  a^2[ 8/(5 - sqrt(5)] 
+ Rationalising the denominator
+ t^2 = [ 8/(5-sqrt(5) .( 5 + sqrt(5)/5 + sqrt(5)) a^2
+ t^2 =  a^2 [ (40 - 8 sqrt(5))/20 ] 
+ => t = sqrt ( 10 - 2 sqrt(5)/5 ) a
+ => t = sqrt ( 2 - a sqrt (4/5) ) 
+ From the figure also, t = a/cos 18
+ The exact value of cos 18 = sqrt(10 + 2 sqrt(5)/4, so that the reciporocal of cos 18 is 4/sqrt(10 + 2 sqrt(5) 
+ which can be shown to be equal to sqrt (10 - 2 sqrt(5))/ [sqrt (5)]
+ 
+ 
