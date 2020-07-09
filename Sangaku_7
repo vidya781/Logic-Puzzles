@@ -1,0 +1,37 @@
+Fukusima Prefecture, 1893
+
+The T(ABC) is right angled at C and DEFG is a rectangle. The three circles are incircles of the triangles AGD, FBE and GFC.
+O3 is the incircle of T(FCG) the triangle formed by right angle at C. T(GAD) houses circle O1 while T(BEF) houses BEF.
+BC = b, CA = b
+and BA = sqrt(a^2 + b^2)
+
+We define the following orientations:
+
+let P lie on FG such that F-P-G
+let M lie on FC such that F-M-C
+let K be such that G-K-A
+let I be such that D-I-A
+let N be such that D-N-G
+Let O be such that B-O-E
+Let H be such that E-H-F
+Let J be such that B-J-F
+Let L be such that C-L-G
+
+We need to derive a series of relations:
+
+Firstly we note that A(T(FCG)) + A(T(DAG)) + A(T(BEF)) + A(EFGD) = A(T(ABC))
+We easily see by applying the equal tangent length from an external point that:
+
+s1 = k + g + r1
+s2 = h + o + r2
+s3 = f + l + r3 
+
+A(T(FCG)) = r3(f + l + r3)    (O3)
+A(T(BEF)) = r2(h + o + r2)    (O2)
+A(T(DAG)) = r1(k + g + r1)    (O1)
+
+1/2(ab) = (g+r1)(f+l) + r3(f + l + r3) + r2(h + o + r2) + r1(k + g + r1)
+
+1/2 (o + h + f + r3) ( r3 + l + g + k) = (g + r1)(f + l) + r3(f + l + r3) + r2(h + o + r2) + r1(g + k + r1)
+
+Simplifying we get, r1^2 + r2^2 = r3^2
