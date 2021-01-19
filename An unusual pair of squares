@@ -1,0 +1,34 @@
+This one appeared in an RMO.
+
+a + b = 1
+
+Prove that : (a + 1/a) ^2 + (b + 1/b)^2 >= 25 / 2
+
+Solution :
+
+The key observation in this problem is that a + b = 1 so let us see what happens when a = b = 1/2
+
+( 1/2 + 2)^2 + (1/2 + 2)^2 = 25 / 2
+
+We could have used A.M >= GM but it would lead us nowhere.
+
+Notice that when a = 1/4 b = 3/4 and vice versa so when one number is closer to the centre, the other moves away from 
+the centre
+
+If a = 1/4 and b = 3/4
+
+LHS = 1/16 + 16 + 9/16 + 16/9 which is much greater than 17/2
+
+so a = 1/2 - h, b = 1/2 + h where 0 <= h <= 1/2
+
+So the whole expression transforms to : (1/2-h)^2 + (1/2 + h)^2 + 1/(1/2-h)^2 + 1/(1/2+h)^2 
+and to prove that the above expression >= 17/2
+
+2h^2 + (1/2+2h^2)/(1/4-h^2)^2 >= 8
+
+Now in the above Numerator of the 2nd terms is at least 1/2 if h = 0 and in that case denominator is 1/16 and the whole
+expression becomes = 8.
+
+Any other value that h takes would result in the whole expression being greater than 8.
+
+Hence the result.
