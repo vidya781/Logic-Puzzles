@@ -1,0 +1,68 @@
+These problems appeared in the Australian Intermediate Math Olympiad.
+
+1) Let ABCD be a parallelogram and let P be a point inside it such that < APB + < CPD = 180
+   Prove that < PBC = < CDP
+   
+   Solution :
+   
+   Draw a parallelogram in which AB || DC and AD || BC
+   P be the point inside where <APB + <CPD = 180
+   Let < APB = a, <DPC = b
+   to prove < CDP = < PBC = T
+   Now T + b + < PCD = 180
+   => < PCD = 180-(T+b) = <CAB
+   Also, 180-(T+b) + T + a = 180
+   a = b
+   Therefore a + a = 180 ( as a = b)
+   a = 90
+   Therefore the parallelogram is either a rectangle or a square
+   But since the diagonals intersect each other at right angles, the parallelogram transforms 
+   into a square and hence we must have ABCD is a square
+   d = s
+   => < CDP = < CBP ( proved )
+   
+   2) A semicircle, centre O, is inscribed in quad ABCD so that AB contains the diameter and BC
+      CD and DA are all tangents to the semicircle and AO = OB. Prove that AO^2 = AD.BC
+      
+     Solution:
+     
+     Draw a figure in which AB is diamter and O is the centre so that AO = OB
+     
+     AD, BC are tangents at extremities and DC touches the semicircle at M. Draw OM
+     Clearly (2r)^2 = AM^2 + MB^2
+     Now AM = 2dcos(a), MB = 2dcos(b)
+     
+     where AD = d = DM and l = BC = CM
+     a = <DAK and b = <CBN where N is mid point of MB
+     
+     r^2 = d^2cos^2(a) + l^2cos^2(b)
+     
+     By similarity of T(AOM) and T(BOM)
+     AO/AM = BO/BM
+     dcos(a) = lcos(b)
+     r^2 = 2l^2cos^2(b)
+     => cos(b) = r/l sqrt(2)
+     also cos(a) = r/d sqrt(2)
+     => r^2 = 2dlcos(a)cos(b)
+     From symmetry, a = b = 45
+     => r^2 = 2dl (1/sqrt(2) ) (1/sqrt(2))
+     => r^2 = dl
+     Hence AO^2 = AD.BC
+     
+     3] T(ABC) is acute angled Triangle with AB = 15 and AC = 13 and let D be the foot of the 
+        perpendicular from A to BC and area(ADC) = 30. If the area of T(ADC) is an integer, what is it?
+        
+     Solution :
+     
+     Draw a neat figure to simplify, then AD is the altitude to BC
+     DC = sqrt(169-h^2)
+     BD = sqrt(225-h^2)
+     
+     A(ABC) = h/2 [ DC + BD]
+     We are given h sqrt(169-h^2) = 60 
+                                  = 12 X 5
+                                  = 6 X 10. ( ignoring others like 15 X 4, 30 X 2) etc as h must be less 
+                                  than 13 and 15
+     Let h = 12 then h^2 = 144, DC = sqrt(169-144) = 5 and BD = 9
+     Therefore A = 1/2 X 14 X 12 = 84
+     
